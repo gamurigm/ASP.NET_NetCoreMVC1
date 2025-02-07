@@ -1,0 +1,11 @@
+C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Entidad\bin\Debug\net8.0\Capa_Entidad.deps.json
+C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Entidad\bin\Debug\net8.0\Capa_Entidad.dll
+C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Entidad\bin\Debug\net8.0\Capa_Entidad.pdb
+C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Entidad\obj\Debug\net8.0\Capa_Entidad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Entidad\obj\Debug\net8.0\Capa_Entidad.AssemblyInfoInputs.cache
+C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Entidad\obj\Debug\net8.0\Capa_Entidad.AssemblyInfo.cs
+C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Entidad\obj\Debug\net8.0\Capa_Entidad.csproj.CoreCompileInputs.cache
+C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Entidad\obj\Debug\net8.0\Capa_Entidad.dll
+C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Entidad\obj\Debug\net8.0\refint\Capa_Entidad.dll
+C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Entidad\obj\Debug\net8.0\Capa_Entidad.pdb
+C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Entidad\obj\Debug\net8.0\ref\Capa_Entidad.dll

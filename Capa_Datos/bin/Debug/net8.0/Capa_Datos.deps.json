@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Capa_Datos/1.0.0": {
+        "dependencies": {
+          "Capa_Entidad": "1.0.0"
+        },
+        "runtime": {
+          "Capa_Datos.dll": {}
+        }
+      },
+      "Capa_Entidad/1.0.0": {
+        "runtime": {
+          "Capa_Entidad.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Capa_Datos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Capa_Entidad/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
