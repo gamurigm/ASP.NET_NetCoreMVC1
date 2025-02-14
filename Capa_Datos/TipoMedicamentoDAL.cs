@@ -1,18 +1,47 @@
 ﻿using Capa_Entidad;
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
 
 namespace Capa_Datos
 {
-    public class TipoMedicamentoDAL
+    public class TipoMedicamentoDAL : BaseDatos
     {
         public List<TipoMedicamentoCLS> listarTipoMedicamento()
         {
-            return new List<TipoMedicamentoCLS>
+            List<TipoMedicamentoCLS> lista = new();
+
+            try
             {
-                new TipoMedicamentoCLS { Id = 1, nombre = "Analgesicos", descripcion = "Para aliviar el dolor" },
-                new TipoMedicamentoCLS { Id = 2, nombre = "Antibióticos", descripcion = "Para tratar infecciones bacterianas" },
-                new TipoMedicamentoCLS { Id = 3, nombre = "Antidepresivos", descripcion = "Para tratar trastornos del estado de ánimo" },
-                new TipoMedicamentoCLS { Id = 4, nombre = "Antihistamínicos", descripcion = "Para tratar alergias" }
-            };
+                using SqlConnection cn = ObtenerConexion();
+                cn.Open();
+
+                using SqlCommand cmd = new("SELECT IIDTIPOMEDICAMENTO, NOMBRE, DESCRIPCION FROM TipoMedicamento", cn);
+                using SqlDataReader drd = cmd.ExecuteReader();
+
+                while (drd.Read())
+                {
+                    lista.Add(new TipoMedicamentoCLS
+                    {
+                        id = drd.GetInt32(0),
+                        nombre = drd.GetString(1),
+                        descripcion = drd.GetString(2)
+                    });
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Puedes registrar el error en un log para depuración
+                Console.WriteLine($"Error SQL: {ex.Message}");
+                lista = new List<TipoMedicamentoCLS>(); // Retorna una lista vacía en lugar de null
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error inesperado: {ex.Message}");
+                lista = new List<TipoMedicamentoCLS>();
+            }
+
+            return lista;
         }
     }
 }

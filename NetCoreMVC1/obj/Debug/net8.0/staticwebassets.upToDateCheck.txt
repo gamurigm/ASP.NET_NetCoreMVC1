@@ -3,6 +3,7 @@ wwwroot\favicon.ico
 wwwroot\js\Generic.js
 wwwroot\js\Medicamento.js
 wwwroot\js\site.js
+wwwroot\js\Sucursal.js
 wwwroot\js\TipoMedicamento.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

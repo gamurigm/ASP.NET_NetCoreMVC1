@@ -19,22 +19,20 @@ namespace NetCoreMVC1.Controllers
             return View();
         }
 
-        public string Saludo()
-        {
-            return "Hola amigos";
-        }
-
-
-
-        public string saludoNombre(string nombre) 
-        {
-            return "Bienvenido "+ nombre;
-        }
-
         public List<TipoMedicamentoCLS> listarTipoMedicamento()
         {
             TipoMedicamentoBL obj = new TipoMedicamentoBL();
             return  obj.listaMedicamentos();
         }
+        
+        public string cadenaConexion()
+        {
+            IConfigurationBuilder builder = new ConfigurationBuilder();
+            builder.AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json"));
+            var root = builder.Build();
+            var cadenaDato = root.GetConnectionString("cn");
+            return cadenaDato;
+        }
+
     }
 }

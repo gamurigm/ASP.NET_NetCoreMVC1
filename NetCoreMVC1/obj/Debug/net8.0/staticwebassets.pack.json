@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\js\\Medicamento.js"
     },
     {
+      "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Sucursal.js",
+      "PackagePath": "staticwebassets\\js\\Sucursal.js"
+    },
+    {
       "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\TipoMedicamento.js",
       "PackagePath": "staticwebassets\\js\\TipoMedicamento.js"
     },

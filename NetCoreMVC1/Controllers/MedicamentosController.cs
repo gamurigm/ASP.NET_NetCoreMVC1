@@ -8,12 +8,6 @@ namespace NetCoreMVC1.Controllers
         {
             return View();
         }
-
-        public string saludo()
-        {
-            return "hola";
-        }
-
     }
 
     
