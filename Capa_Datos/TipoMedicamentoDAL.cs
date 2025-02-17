@@ -29,8 +29,7 @@ namespace Capa_Datos
                         descripcion = drd.GetString(2)
                     });
                 }
-                cn.Close();
-                cn.Dispose();
+             
             }
             catch (SqlException ex)
             {
@@ -68,11 +67,11 @@ namespace Capa_Datos
                             {
                                 lista.Add(new TipoMedicamentoCLS
                                 {
-                                    id = !drd.IsDBNull(0) ? drd.GetInt32(0) : 0,
-                                    nombre = !drd.IsDBNull(1) ? drd.GetString(1) : string.Empty,
-                                    descripcion = !drd.IsDBNull(2) ? drd.GetString(2) : string.Empty
+                                    id = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
+                                    nombre = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
+                                    descripcion = drd.IsDBNull(2) ? string.Empty : drd.GetString(2)
                                 });
-                            }   
+                            }
                         }
                     }
                 }
