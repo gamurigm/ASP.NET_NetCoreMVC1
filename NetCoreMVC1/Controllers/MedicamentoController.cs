@@ -2,13 +2,11 @@
 
 namespace NetCoreMVC1.Controllers
 {
-    public class MedicamentosController : Controller
+    public class MedicamentoController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
     }
-
-    
 }

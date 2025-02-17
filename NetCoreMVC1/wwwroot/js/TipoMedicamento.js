@@ -12,6 +12,17 @@ async function listarTipoMedicamento() {
     await pintar(objTipoMedicamento);
 }
 
+function filtrarTipoMedicamento() {
+    let nombre = get("txtNombreBusqueda")
+    if (nombre == "")
+        listarTipoMedicamento();
+    else {
+     
+        objTipoMedicamento.url = "TipoMedicamento/filtrarTipoMedicamento/?nombre=" + nombre;
+        pintar(objTipoMedicamento);
+    }
+}
+
 async function buscarTipoMedicamento() {  
     let descTM = document.getElementById("txtDescripcionBusqueda").value;
     objTipoMedicamento.url = "TipoMedicamento/filtrarTipoMedicamento/?nombre=" + descTM;
@@ -20,5 +31,5 @@ async function buscarTipoMedicamento() {
 
 function limpiarControl() {
     listarTipoMedicamento();
-    document.getElementById("txtDescripcionBusqueda").value = "";
+    document.getElementById("txtNombreBusqueda").value = "";
 }

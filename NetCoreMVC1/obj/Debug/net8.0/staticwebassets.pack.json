@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\js\\Generic.js"
     },
     {
+      "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Ingreso.js",
+      "PackagePath": "staticwebassets\\js\\Ingreso.js"
+    },
+    {
+      "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Laboratorio.js",
+      "PackagePath": "staticwebassets\\js\\Laboratorio.js"
+    },
+    {
       "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Medicamento.js",
       "PackagePath": "staticwebassets\\js\\Medicamento.js"
     },

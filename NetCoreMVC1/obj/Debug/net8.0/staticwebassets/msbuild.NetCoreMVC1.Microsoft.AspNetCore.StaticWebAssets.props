@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3r8b2a0bt1</Fingerprint>
-      <Integrity>8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=</Integrity>
+      <Fingerprint>j9uek1w510</Fingerprint>
+      <Integrity>SfffrKiz2mvL3kf4nPaq6EIpi6NhXST7bIyoUpp8BeU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\DetalleVenta.js'))</OriginalItemSpec>
@@ -66,11 +66,47 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>h3fxrjjaby</Fingerprint>
-      <Integrity>U14KTonjnmqoSXowPGGY47LdpJi7QaZkPisCCoDGkF4=</Integrity>
+      <Fingerprint>joa1e7a6dy</Fingerprint>
+      <Integrity>ranckiNKZOGC4IcKRFxGSu+niTUr8AZYtKIhAuJH9A4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Generic.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Ingreso.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NetCoreMVC1</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NetCoreMVC1</BasePath>
+      <RelativePath>js/Ingreso.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hj0pdtmhgq</Fingerprint>
+      <Integrity>/S95kicwy1Vu7qQkKI82Ku8AVq1xMwhBfyaSNBLV0fU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Ingreso.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Laboratorio.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NetCoreMVC1</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NetCoreMVC1</BasePath>
+      <RelativePath>js/Laboratorio.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rsw3hdb6el</Fingerprint>
+      <Integrity>NQJyTBNz+gXbOjLtnnTrGzhZ06LedcnfY0WJIAsIK9o=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Laboratorio.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Medicamento.js'))">
       <SourceType>Package</SourceType>
@@ -102,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qrk35hwq1q</Fingerprint>
-      <Integrity>5hR1nvUjWFJKiI7AiroC6nmXpBlPNxAbDceGw5OiGDw=</Integrity>
+      <Fingerprint>b0s19zclus</Fingerprint>
+      <Integrity>9aaF4a3z4YrX1ITLez8FbR+ME5PnOBlEyB/W9mXJMh0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Persona.js'))</OriginalItemSpec>
@@ -138,8 +174,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>w9cuith442</Fingerprint>
-      <Integrity>pI/MrkhlBhROCCNaCjSQ8KUHLYN8jucwJ+UMojD348U=</Integrity>
+      <Fingerprint>zqv0heocaz</Fingerprint>
+      <Integrity>u8kTrBGVL2EoF2tindoGhaMLIQyPF7o7N4OKA7ej3dQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Sucursal.js'))</OriginalItemSpec>
@@ -156,8 +192,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>llfu29p9xd</Fingerprint>
-      <Integrity>eYCmxTZJMGFA5HA6C3Yw8FoFY4kpQzyyZmnHo625bDo=</Integrity>
+      <Fingerprint>n0h5to1c4l</Fingerprint>
+      <Integrity>mW1TJulHQnzB4mYkTvJw64axepO8a1ISqAZ9Co3LxcM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\TipoMedicamento.js'))</OriginalItemSpec>

@@ -13,6 +13,17 @@ async function listarSucursal() {
     await pintar(objSucursal);
 }
 
+async function filtrarSucursal() {
+    let nombre = get("txtNombreBusqueda")
+    if (nombre == "")
+        listarSucursal();
+    else {
+
+        objSucursal.url = "Sucursal/filtrarSucursal/?nombre=" + nombre;
+        await pintar(objSucursal);
+    }
+}
+
 async function buscarSucursal() {
     let nombreSucursal = get("txtNombreBusqueda");
     objSucursal.url = "Sucursal/filtrarSucursal/?nombre=" + nombreSucursal;
@@ -21,6 +32,6 @@ async function buscarSucursal() {
 
 function limpiarControl() {
     listarSucursal();
-    document.getElementById("txtNombreBusqueda").value = "";
+    set("txtNombreBusqueda",'');
 }
 

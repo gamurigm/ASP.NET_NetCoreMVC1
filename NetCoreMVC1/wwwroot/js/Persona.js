@@ -28,5 +28,5 @@ async function buscar() {
 
 function limpiarControl() {
     listarPersonas();
-    document.getElementById("txtNombreBusqueda").value = "";
+    set('');
 }

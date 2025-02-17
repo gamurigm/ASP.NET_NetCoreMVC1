@@ -2,6 +2,8 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\DetalleVenta.js
 wwwroot\js\Generic.js
+wwwroot\js\Ingreso.js
+wwwroot\js\Laboratorio.js
 wwwroot\js\Medicamento.js
 wwwroot\js\Persona.js
 wwwroot\js\site.js

@@ -1,7 +1,9 @@
 ﻿function get(val) {
     return document.getElementById(val).value;
 }
-
+function set(id, val) {
+    return document.getElementById(id).value = val;
+}
 
 async function fetch_get(url, tipoRespuesta, cb) {
 
