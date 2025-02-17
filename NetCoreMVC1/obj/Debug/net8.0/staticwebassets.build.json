@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0QCddToFC7jZmmnLpn2we1BRQqRAEh8yqQN7i6cmWwM=",
+  "Hash": "KdvlHFk1o3JPxchuhJppgyYY3FbtkRDM5M6HhFgOcj8=",
   "Source": "NetCoreMVC1",
   "BasePath": "_content/NetCoreMVC1",
   "Mode": "Default",
@@ -346,8 +346,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mpyigms19s",
-      "Integrity": "xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM=",
+      "Fingerprint": "zuj10czgmz",
+      "Integrity": "NQVqn7J1anjHO6u4Z2JA1Q/T5352pPW0qOLJPVtoCG4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
@@ -2607,7 +2607,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "204136"
+          "Value": "204144"
         },
         {
           "Name": "Content-Type",
@@ -2615,11 +2615,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM=\""
+          "Value": "\"NQVqn7J1anjHO6u4Z2JA1Q/T5352pPW0qOLJPVtoCG4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 14:33:41 GMT"
+          "Value": "Mon, 17 Feb 2025 15:33:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2629,7 +2629,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM="
+          "Value": "sha256-NQVqn7J1anjHO6u4Z2JA1Q/T5352pPW0qOLJPVtoCG4="
         }
       ]
     },
@@ -2876,51 +2876,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
-      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "204136"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 14:33:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mpyigms19s"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/css/bootstrap.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM="
         }
       ]
     },
@@ -3249,6 +3204,51 @@
         {
           "Name": "integrity",
           "Value": "sha256-SZ2mKaD4A+b+HIvttwl+TvLFnVy8o8/X40j+EKVwyvY="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap.zuj10czgmz.css",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "204144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NQVqn7J1anjHO6u4Z2JA1Q/T5352pPW0qOLJPVtoCG4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 15:33:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zuj10czgmz"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NQVqn7J1anjHO6u4Z2JA1Q/T5352pPW0qOLJPVtoCG4="
         }
       ]
     },
