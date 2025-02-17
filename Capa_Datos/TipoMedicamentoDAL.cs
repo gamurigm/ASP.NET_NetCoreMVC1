@@ -1,6 +1,7 @@
 ﻿using Capa_Entidad;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace Capa_Datos
@@ -28,12 +29,14 @@ namespace Capa_Datos
                         descripcion = drd.GetString(2)
                     });
                 }
+                cn.Close();
+                cn.Dispose();
             }
             catch (SqlException ex)
             {
                 // Puedes registrar el error en un log para depuración
                 Console.WriteLine($"Error SQL: {ex.Message}");
-                lista = new List<TipoMedicamentoCLS>(); // Retorna una lista vacía en lugar de null
+                lista = new List<TipoMedicamentoCLS>(); 
             }
             catch (Exception ex)
             {
@@ -43,5 +46,50 @@ namespace Capa_Datos
 
             return lista;
         }
+
+        public List<TipoMedicamentoCLS> filtrarTipoMedicamento(string nombre)
+        {
+            List<TipoMedicamentoCLS> lista = new();
+
+            try
+            {
+                using (SqlConnection cn = ObtenerConexion())
+                {
+                    cn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand("uspFiltrarTipoMedicamento", cn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@descripcion", nombre == null ? string.Empty : nombre);
+
+                        using (SqlDataReader drd = cmd.ExecuteReader())
+                        {
+                            while (drd.Read())
+                            {
+                                lista.Add(new TipoMedicamentoCLS
+                                {
+                                    id = !drd.IsDBNull(0) ? drd.GetInt32(0) : 0,
+                                    nombre = !drd.IsDBNull(1) ? drd.GetString(1) : string.Empty,
+                                    descripcion = !drd.IsDBNull(2) ? drd.GetString(2) : string.Empty
+                                });
+                            }   
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine($"Error SQL: {ex.Message}");
+                lista = new List<TipoMedicamentoCLS>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error inesperado: {ex.Message}");
+                lista = new List<TipoMedicamentoCLS>();
+            }
+
+            return lista;
+        }
+
     }
 }

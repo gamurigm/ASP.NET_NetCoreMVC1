@@ -1,5 +1,4 @@
 ﻿using Capa_Entidad;
-using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -21,17 +20,15 @@ namespace Capa_Datos
 
                     using (SqlCommand cmd = new SqlCommand("Listar", cn))
                     {
-                   
-
                         using (SqlDataReader drd = cmd.ExecuteReader())
                         {
                             while (drd.Read())
                             {
                                 lista.Add(new SucursalCLS
                                 {
-                                    idSucursal = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
-                                    nombre = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
-                                    direccion = drd.IsDBNull(2) ? string.Empty : drd.GetString(2)
+                                    IIDSUCURSAL = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
+                                    NOMBRE = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
+                                    DIRECCION = drd.IsDBNull(2) ? string.Empty : drd.GetString(2)
                                 });
                             }
                         }
@@ -41,7 +38,51 @@ namespace Capa_Datos
             catch (SqlException ex)
             {
                 Console.WriteLine($"Error SQL: {ex.Message}");
-                lista = new List<SucursalCLS>(); // Retorna una lista vacía en caso de error
+                lista = new List<SucursalCLS>(); 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error inesperado: {ex.Message}");
+                lista = new List<SucursalCLS>();
+            }
+
+            return lista;
+        }
+
+        public List<SucursalCLS> filtrarSucursal(string nombre)
+        {
+            List<SucursalCLS> lista = new();
+
+            try
+            {
+                using (SqlConnection cn = ObtenerConexion())
+                {
+                    cn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand("uspFiltrarSucursal", cn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@nombresucursal", nombre == null ? string.Empty : nombre);
+
+                        using (SqlDataReader drd = cmd.ExecuteReader())
+                        {
+                            while (drd.Read())
+                            {
+                                lista.Add(new SucursalCLS
+                                {
+                                    IIDSUCURSAL = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
+                                    NOMBRE = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
+                                    DIRECCION = drd.IsDBNull(2) ? string.Empty : drd.GetString(2)
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine($"Error SQL: {ex.Message}");
+                lista = new List<SucursalCLS>();
             }
             catch (Exception ex)
             {
@@ -52,4 +93,6 @@ namespace Capa_Datos
             return lista;
         }
     }
+
 }
+

@@ -17,5 +17,12 @@ namespace Capa_Negocio
             return obj.listarSucursal();
 
         }
+
+        public List<SucursalCLS> filtrarSucursal(string nombre)
+        {
+            SucursalDAL obj = new SucursalDAL();
+            return obj.filtrarSucursal(nombre);
+
+        }
     }
 }

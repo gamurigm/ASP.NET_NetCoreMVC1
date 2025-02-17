@@ -9,7 +9,6 @@ namespace Capa_Datos
     {
         private static readonly string _cadenaConexion;
 
-        // Constructor estático para cargar la configuración solo una vez
         static BaseDatos()
         {
             IConfigurationBuilder builder = new ConfigurationBuilder()

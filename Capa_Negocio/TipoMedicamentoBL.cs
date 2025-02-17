@@ -11,5 +11,11 @@ namespace Capa_Negocio
             return obj.listarTipoMedicamento();
 
         }
+        public List<TipoMedicamentoCLS> filtrarTipoMedicamento(string nombre)
+        {
+            TipoMedicamentoDAL obj = new TipoMedicamentoDAL();
+            return obj.filtrarTipoMedicamento(nombre);
+
+        }
     }
 }

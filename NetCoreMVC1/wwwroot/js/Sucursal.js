@@ -1,13 +1,26 @@
-﻿window.onload = function () {
+﻿
+window.onload = function () {
     listarSucursal();
 }
 
+let objSucursal = {
+    url: "Sucursal/listarSucursal",
+    cabeceras: ["ID Sucursal", "Nombre", "Dirección"],
+    propiedades: ["iidsucursal", "nombre", "direccion"]
+};
+
 async function listarSucursal() {
-    pintar({
-        url: "Sucursal/listarSucursal",
-        cabeceras: ["Id", "Nombre", "Direccion"],
-        propiedades: ["idSucursal", "nombre", "direccion"]
-
-    })
-
+    await pintar(objSucursal);
 }
+
+async function buscarSucursal() {
+    let nombreSucursal = get("txtNombreBusqueda");
+    objSucursal.url = "Sucursal/filtrarSucursal/?nombre=" + nombreSucursal;
+    await pintar(objSucursal);
+}
+
+function limpiarControl() {
+    listarSucursal();
+    document.getElementById("txtNombreBusqueda").value = "";
+}
+

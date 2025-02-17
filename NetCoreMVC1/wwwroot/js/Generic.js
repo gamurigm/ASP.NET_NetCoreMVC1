@@ -1,4 +1,9 @@
-﻿async function fetch_get(url, tipoRespuesta, cb) {
+﻿function get(val) {
+    return document.getElementById(val).value;
+}
+
+
+async function fetch_get(url, tipoRespuesta, cb) {
 
     try {
         let raiz = document.getElementById('oculto')?.value || '';  // Evita errores si el elemento no existe
@@ -20,6 +25,7 @@
     }
 
 }
+
 
 let objConfigurationGlobal;
 function pintar(objConfiguration) {
