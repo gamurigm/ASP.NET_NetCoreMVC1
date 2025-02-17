@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Capa_Negocio\Capa_Negocio.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\UsuarioController\" />
+  </ItemGroup>
+
 </Project>

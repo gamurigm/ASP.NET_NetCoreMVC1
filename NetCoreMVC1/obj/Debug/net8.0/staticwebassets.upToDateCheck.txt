@@ -1,10 +1,14 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\js\DetalleVenta.js
 wwwroot\js\Generic.js
 wwwroot\js\Medicamento.js
+wwwroot\js\Persona.js
 wwwroot\js\site.js
 wwwroot\js\Sucursal.js
 wwwroot\js\TipoMedicamento.js
+wwwroot\js\TipoUsuario.js
+wwwroot\js\Usuario.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6LBOFpV6/SAe8vIsUm5P6tT+mfEjblFzb/KDNlRuoUw=",
+  "Hash": "MDnQv9pn3x3uN5HEU+GZG65h7PpcHK2OXUCshvzDP70=",
   "Source": "NetCoreMVC1",
   "BasePath": "_content/NetCoreMVC1",
   "Mode": "Default",
@@ -101,6 +101,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\DetalleVenta.js",
+      "SourceId": "NetCoreMVC1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\",
+      "BasePath": "_content/NetCoreMVC1",
+      "RelativePath": "js/DetalleVenta#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3r8b2a0bt1",
+      "Integrity": "8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\DetalleVenta.js"
+    },
+    {
       "Identity": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Generic.js",
       "SourceId": "NetCoreMVC1",
       "SourceType": "Discovered",
@@ -141,6 +162,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Medicamento.js"
+    },
+    {
+      "Identity": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Persona.js",
+      "SourceId": "NetCoreMVC1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\",
+      "BasePath": "_content/NetCoreMVC1",
+      "RelativePath": "js/Persona#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qrk35hwq1q",
+      "Integrity": "5hR1nvUjWFJKiI7AiroC6nmXpBlPNxAbDceGw5OiGDw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Persona.js"
     },
     {
       "Identity": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\site.js",
@@ -199,11 +241,53 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xibbwh4ccx",
-      "Integrity": "56wnuQXdPx/a5sLMPZdP7raxA2lQQfxoYaPLjO/IXKE=",
+      "Fingerprint": "llfu29p9xd",
+      "Integrity": "eYCmxTZJMGFA5HA6C3Yw8FoFY4kpQzyyZmnHo625bDo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\TipoMedicamento.js"
+    },
+    {
+      "Identity": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\TipoUsuario.js",
+      "SourceId": "NetCoreMVC1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\",
+      "BasePath": "_content/NetCoreMVC1",
+      "RelativePath": "js/TipoUsuario#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3r8b2a0bt1",
+      "Integrity": "8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\TipoUsuario.js"
+    },
+    {
+      "Identity": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Usuario.js",
+      "SourceId": "NetCoreMVC1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\",
+      "BasePath": "_content/NetCoreMVC1",
+      "RelativePath": "js/Usuario#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gy97q0jp72",
+      "Integrity": "2AevlBwVe9uDy5aadp0Gzq5bIkeLx2SN4l9hFduguMY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Usuario.js"
     },
     {
       "Identity": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -1569,6 +1653,88 @@
       ]
     },
     {
+      "Route": "js/DetalleVenta.3r8b2a0bt1.js",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\DetalleVenta.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 02:08:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3r8b2a0bt1"
+        },
+        {
+          "Name": "label",
+          "Value": "js/DetalleVenta.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+        }
+      ]
+    },
+    {
+      "Route": "js/DetalleVenta.js",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\DetalleVenta.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 02:08:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+        }
+      ]
+    },
+    {
       "Route": "js/Generic.h3fxrjjaby.js",
       "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Generic.js",
       "Selectors": [],
@@ -1729,6 +1895,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-iT1WHaOLJY9X6A4MFBLOE1rFq+7K87GvPmzBe8PAkBg="
+        }
+      ]
+    },
+    {
+      "Route": "js/Persona.js",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Persona.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "893"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5hR1nvUjWFJKiI7AiroC6nmXpBlPNxAbDceGw5OiGDw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 03:47:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5hR1nvUjWFJKiI7AiroC6nmXpBlPNxAbDceGw5OiGDw="
+        }
+      ]
+    },
+    {
+      "Route": "js/Persona.qrk35hwq1q.js",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Persona.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "893"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5hR1nvUjWFJKiI7AiroC6nmXpBlPNxAbDceGw5OiGDw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 03:47:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qrk35hwq1q"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Persona.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5hR1nvUjWFJKiI7AiroC6nmXpBlPNxAbDceGw5OiGDw="
         }
       ]
     },
@@ -1907,7 +2155,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "735"
+          "Value": "740"
         },
         {
           "Name": "Content-Type",
@@ -1915,11 +2163,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"56wnuQXdPx/a5sLMPZdP7raxA2lQQfxoYaPLjO/IXKE=\""
+          "Value": "\"eYCmxTZJMGFA5HA6C3Yw8FoFY4kpQzyyZmnHo625bDo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 01:09:35 GMT"
+          "Value": "Mon, 17 Feb 2025 01:16:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1929,12 +2177,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-56wnuQXdPx/a5sLMPZdP7raxA2lQQfxoYaPLjO/IXKE="
+          "Value": "sha256-eYCmxTZJMGFA5HA6C3Yw8FoFY4kpQzyyZmnHo625bDo="
         }
       ]
     },
     {
-      "Route": "js/TipoMedicamento.xibbwh4ccx.js",
+      "Route": "js/TipoMedicamento.llfu29p9xd.js",
       "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\TipoMedicamento.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1944,7 +2192,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "735"
+          "Value": "740"
         },
         {
           "Name": "Content-Type",
@@ -1952,11 +2200,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"56wnuQXdPx/a5sLMPZdP7raxA2lQQfxoYaPLjO/IXKE=\""
+          "Value": "\"eYCmxTZJMGFA5HA6C3Yw8FoFY4kpQzyyZmnHo625bDo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 01:09:35 GMT"
+          "Value": "Mon, 17 Feb 2025 01:16:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1966,7 +2214,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xibbwh4ccx"
+          "Value": "llfu29p9xd"
         },
         {
           "Name": "label",
@@ -1974,7 +2222,171 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-56wnuQXdPx/a5sLMPZdP7raxA2lQQfxoYaPLjO/IXKE="
+          "Value": "sha256-eYCmxTZJMGFA5HA6C3Yw8FoFY4kpQzyyZmnHo625bDo="
+        }
+      ]
+    },
+    {
+      "Route": "js/TipoUsuario.3r8b2a0bt1.js",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\TipoUsuario.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 01:41:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3r8b2a0bt1"
+        },
+        {
+          "Name": "label",
+          "Value": "js/TipoUsuario.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+        }
+      ]
+    },
+    {
+      "Route": "js/TipoUsuario.js",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\TipoUsuario.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 01:41:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+        }
+      ]
+    },
+    {
+      "Route": "js/Usuario.gy97q0jp72.js",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Usuario.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2AevlBwVe9uDy5aadp0Gzq5bIkeLx2SN4l9hFduguMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 01:19:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gy97q0jp72"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Usuario.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2AevlBwVe9uDy5aadp0Gzq5bIkeLx2SN4l9hFduguMY="
+        }
+      ]
+    },
+    {
+      "Route": "js/Usuario.js",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Usuario.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2AevlBwVe9uDy5aadp0Gzq5bIkeLx2SN4l9hFduguMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 01:19:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2AevlBwVe9uDy5aadp0Gzq5bIkeLx2SN4l9hFduguMY="
         }
       ]
     },
@@ -6675,7 +7087,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 00:38:58 GMT"
+          "Value": "Mon, 17 Feb 2025 02:12:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6712,7 +7124,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 00:38:58 GMT"
+          "Value": "Mon, 17 Feb 2025 02:12:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6757,7 +7169,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 00:38:58 GMT"
+          "Value": "Mon, 17 Feb 2025 02:12:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6802,7 +7214,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 00:38:58 GMT"
+          "Value": "Mon, 17 Feb 2025 02:12:37 GMT"
         },
         {
           "Name": "Cache-Control",

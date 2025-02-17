@@ -22,6 +22,6 @@
 
     app.MapControllerRoute(
         name: "default",
-        pattern: "{controller=TipoMedicamento}/{action=Inicio}/{id?}");
+        pattern: "{controller=Persona}/{action=Index}/{id?}");
 
     app.Run();

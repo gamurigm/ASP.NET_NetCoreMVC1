@@ -14,7 +14,7 @@ async function listarTipoMedicamento() {
 
 async function buscarTipoMedicamento() {  
     let descTM = document.getElementById("txtDescripcionBusqueda").value;
-    objTipoMedicamento.url = "TipoMedicamento/filtrarTipoMedicamento/?n=" + descTM;
+    objTipoMedicamento.url = "TipoMedicamento/filtrarTipoMedicamento/?nombre=" + descTM;
     await pintar(objTipoMedicamento);
 }
 

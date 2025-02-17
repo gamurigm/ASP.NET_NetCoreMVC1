@@ -28,12 +28,20 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/gamur/source/repos/NetCoreMVC1/NetCoreMVC1/Views/DetalleVenta/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZlbnRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gamur/source/repos/NetCoreMVC1/NetCoreMVC1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gamur/source/repos/NetCoreMVC1/NetCoreMVC1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gamur/source/repos/NetCoreMVC1/NetCoreMVC1/Views/Persona/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gamur/source/repos/NetCoreMVC1/NetCoreMVC1/Views/Shared/Error.cshtml]
@@ -50,6 +58,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gamur/source/repos/NetCoreMVC1/NetCoreMVC1/Views/TipoMedicamento/Inicio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb01lZGljYW1lbnRvXEluaWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gamur/source/repos/NetCoreMVC1/NetCoreMVC1/Views/TipoUsuario/IndexTipoUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1VzdWFyaW9cSW5kZXhUaXBvVXN1YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gamur/source/repos/NetCoreMVC1/NetCoreMVC1/Views/Usuario/IndexUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleFVzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gamur/source/repos/NetCoreMVC1/NetCoreMVC1/Views/_ViewImports.cshtml]

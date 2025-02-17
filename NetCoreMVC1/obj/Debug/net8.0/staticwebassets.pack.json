@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\DetalleVenta.js",
+      "PackagePath": "staticwebassets\\js\\DetalleVenta.js"
+    },
+    {
       "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Generic.js",
       "PackagePath": "staticwebassets\\js\\Generic.js"
     },
@@ -21,12 +25,24 @@
       "PackagePath": "staticwebassets\\js\\Medicamento.js"
     },
     {
+      "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Persona.js",
+      "PackagePath": "staticwebassets\\js\\Persona.js"
+    },
+    {
       "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Sucursal.js",
       "PackagePath": "staticwebassets\\js\\Sucursal.js"
     },
     {
       "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\TipoMedicamento.js",
       "PackagePath": "staticwebassets\\js\\TipoMedicamento.js"
+    },
+    {
+      "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\TipoUsuario.js",
+      "PackagePath": "staticwebassets\\js\\TipoUsuario.js"
+    },
+    {
+      "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Usuario.js",
+      "PackagePath": "staticwebassets\\js\\Usuario.js"
     },
     {
       "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\site.js",
