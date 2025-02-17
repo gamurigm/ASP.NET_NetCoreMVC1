@@ -509,7 +509,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "773"
+          "Value": "735"
         },
         {
           "Name": "Content-Type",
@@ -517,22 +517,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EGNeEP41UZ2HJk/+34uC+fQV/3wIROtgr5lNt2Ib0C0=\""
+          "Value": "\"56wnuQXdPx/a5sLMPZdP7raxA2lQQfxoYaPLjO/IXKE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 00:53:10 GMT"
+          "Value": "Mon, 17 Feb 2025 01:09:35 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EGNeEP41UZ2HJk/+34uC+fQV/3wIROtgr5lNt2Ib0C0="
+          "Value": "sha256-56wnuQXdPx/a5sLMPZdP7raxA2lQQfxoYaPLjO/IXKE="
         }
       ]
     },
     {
-      "Route": "js/TipoMedicamento.wko6nhszmn.js",
+      "Route": "js/TipoMedicamento.xibbwh4ccx.js",
       "AssetFile": "js/TipoMedicamento.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -546,7 +546,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "773"
+          "Value": "735"
         },
         {
           "Name": "Content-Type",
@@ -554,21 +554,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EGNeEP41UZ2HJk/+34uC+fQV/3wIROtgr5lNt2Ib0C0=\""
+          "Value": "\"56wnuQXdPx/a5sLMPZdP7raxA2lQQfxoYaPLjO/IXKE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 00:53:10 GMT"
+          "Value": "Mon, 17 Feb 2025 01:09:35 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wko6nhszmn"
+          "Value": "xibbwh4ccx"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EGNeEP41UZ2HJk/+34uC+fQV/3wIROtgr5lNt2Ib0C0="
+          "Value": "sha256-56wnuQXdPx/a5sLMPZdP7raxA2lQQfxoYaPLjO/IXKE="
         },
         {
           "Name": "label",

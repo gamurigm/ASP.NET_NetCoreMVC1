@@ -1,5 +1,4 @@
-﻿window.onload = function () {
-    alert('tipo Medicamento')
+﻿window.onload = function () { 
     listarTipoMedicamento();
 }
 
@@ -13,10 +12,10 @@ async function listarTipoMedicamento() {
     await pintar(objTipoMedicamento);
 }
 
-async function buscarTipoMedicamento() {   
-    let descTM = document.getElementById("txtDescripcionBusqueda").value
-    objTipoMedicamento.url = "TipoMedicamento/filtrarTipoMedicamento/?descripcion=" + descTM
-    await pintar(objTipoMedicamento)
+async function buscarTipoMedicamento() {  
+    let descTM = document.getElementById("txtDescripcionBusqueda").value;
+    objTipoMedicamento.url = "TipoMedicamento/filtrarTipoMedicamento/?n=" + descTM;
+    await pintar(objTipoMedicamento);
 }
 
 function limpiarControl() {
