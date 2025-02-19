@@ -20,18 +20,18 @@ async function filtrarLaboratorio() {
     else {
 
         objSucursal.url = "Laboratorio/filtrarLaboratorio/?nombre=" + nombre;
-        await pintar(objSucursal);
+        await pintar(objLaboratorio);
     }
 }
 
-async function buscarLaboratoriol() {
-    let nombreSucursal = get("txtNombreBusqueda");
-    objSucursal.url = "Laboratorio/filtrarLaboratorio/?nombre=" + nombreSucursal;
-    await pintar(objSucursal);
+async function buscarLaboratorio() {
+    let forma = get("frmBusqueda");
+    let frm = new FormData(forma);
+    alert("hola buscar lab");
 }
 
 function limpiarControl() {
     listarLaboratorio();
-    set("txtNombreBusqueda", '');
+    set("nombre", '');
 }
 

@@ -8,7 +8,7 @@
 
 <fieldset class="mb-4 mt-4">
     <legend>BusquedaLaboratorio</legend>
-    <form class="row g-3">
+    <form class="row g-3" id="frmBusqueda" method="post">
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">Nombre</label>
         <input type="email" class="form-control" name="nombre" id="nombre">
@@ -24,13 +24,9 @@
     </form>
     <br />
     <div class="row g-3">
-        <div class="d-grid gap-2">
-            
-                <button type="submit" class="btn btn-primary">Buscar</button>
-            
-      
+        <div class="d-grid gap-2">      
+                <button type="submit" class="btn btn-primary" onclick="buscarLaboratorio()">Buscar</button>
                 <button type="submit" class="btn btn-primary">Limpiar</button>
-            
         </div>
     </div>
     

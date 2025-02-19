@@ -25,8 +25,34 @@ async function fetch_get(url, tipoRespuesta, cb) {
     } catch (e) {
         alert("Ocurrió un problema: " + e.message);
     }
-
 }
+
+async function fetch_post(url, tipoRespuesta, frm, cb) {
+
+    try {
+        let raiz = document.getElementById('oculto')?.value || '';  // Evita errores si el elemento no existe
+        let urlAbsoluta = `${window.location.protocol}//${window.location.host}/${raiz}${url}`;
+
+        let res = await fetch(urlAbsoluta, {
+            method: "POST",
+            body: frm
+        });
+
+        if (tipoRespuesta === "json") {
+            res = await res.json();
+        } else if (tipoRespuesta === "text") {
+            res = await res.text();
+        } else {
+            throw new Error("Formato de respuesta no soportado.");
+        }
+        cb(res);
+
+
+    } catch (e) {
+        alert("Ocurrió un problema en POST: " + e.message);
+    }
+}
+
 
 
 let objConfigurationGlobal;
