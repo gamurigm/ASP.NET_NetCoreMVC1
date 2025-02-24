@@ -17,10 +17,10 @@ namespace Capa_Negocio
 
         }
 
-        public List<LaboratorioCLS> filtrarLaboratorio(string nombre)
+        public List<LaboratorioCLS> filtrarLaboratorio(LaboratorioCLS objLab)
         {
             LaboratorioDAL obj = new LaboratorioDAL();
-            return obj.filtrarLaboratorio(nombre);
+            return obj.filtrarLaboratorio(objLab);
 
         }
     }

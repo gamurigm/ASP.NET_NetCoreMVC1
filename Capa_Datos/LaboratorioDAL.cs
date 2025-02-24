@@ -11,6 +11,34 @@ namespace Capa_Datos
 {
     public class LaboratorioDAL : BaseDatos
     {
+
+        //public int GuardarLaboratorio(LaboratorioCLS oLaboratorioCLS)
+        //{
+        //    int rpta = 0;
+
+        //    using (SqlConnection cn = ObtenerConexion())
+        //    {
+        //        try
+        //        {
+        //            cn.Open();
+
+        //            using (SqlCommand cmd = new SqlCommand("INSERT INTO Laboratorio", cn))
+        //            {
+        //                cmd.CommandType = CommandType.Text;
+        //                cmd.Parameters.AddWithValue("@nombre", oLaboratorioCLS.NOMBRE);
+        //                cmd.Parameters.AddWithValue("@direccion", oLaboratorioCLS.DIRECCION);
+
+        //                rpta = cmd.ExecuteNonQuery();
+        //            }
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            Console.WriteLine($"Error SQL: {ex.Message}");
+        //            cn.Close();
+        //        }
+        //    }
+        //    return rpta;
+        //}
         public List<LaboratorioCLS> listarLaboratorio()
         {
             List<LaboratorioCLS> lista = new();
@@ -21,7 +49,7 @@ namespace Capa_Datos
                 {
                     cn.Open();
 
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM Laboratorio", cn))
+                    using (SqlCommand cmd = new SqlCommand("uspListarLaboratorio", cn))
                     {
                         using (SqlDataReader drd = cmd.ExecuteReader())
                         {
@@ -32,9 +60,8 @@ namespace Capa_Datos
                                     IIDLABORATORIO = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
                                     NOMBRE = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
                                     DIRECCION = drd.IsDBNull(2) ? string.Empty : drd.GetString(2),
-                                    BHABILITADO = drd.IsDBNull(3) ? (int?)null : drd.GetInt32(3),
-                                    PERSONACONTACTO = drd.IsDBNull(4) ? string.Empty : drd.GetString(4),
-                                    NUMEROCONTACTO = drd.IsDBNull(5) ? string.Empty : drd.GetString(5)
+                                 
+                                    PERSONACONTACTO = drd.IsDBNull(3) ? string.Empty : drd.GetString(3)
                                 });
                             }
                         }
@@ -55,7 +82,7 @@ namespace Capa_Datos
             return lista;
         }
 
-        public List<LaboratorioCLS> filtrarLaboratorio(string nombre)
+        public List<LaboratorioCLS> filtrarLaboratorio(LaboratorioCLS obj)
         {
             List<LaboratorioCLS> lista = new();
 
@@ -65,10 +92,12 @@ namespace Capa_Datos
                 {
                     cn.Open();
 
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM Laboratorio", cn))
+                    using (SqlCommand cmd = new SqlCommand("uspFiltrarLaboratorio", cn))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@nombresucursal", nombre == null ? string.Empty : nombre);
+                        cmd.Parameters.AddWithValue("@nombre", obj.NOMBRE == null ? string.Empty : obj.NOMBRE);
+                        cmd.Parameters.AddWithValue("@direccion", obj.DIRECCION == null ? string.Empty : obj.DIRECCION);
+                        cmd.Parameters.AddWithValue("@personacontacto", obj.PERSONACONTACTO == null ? string.Empty : obj.PERSONACONTACTO);
 
                         using (SqlDataReader drd = cmd.ExecuteReader())
                         {
@@ -79,9 +108,9 @@ namespace Capa_Datos
                                     IIDLABORATORIO = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
                                     NOMBRE = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
                                     DIRECCION = drd.IsDBNull(2) ? string.Empty : drd.GetString(2),
-                                    BHABILITADO = drd.IsDBNull(3) ? (int?)null : drd.GetInt32(3),
-                                    PERSONACONTACTO = drd.IsDBNull(4) ? string.Empty : drd.GetString(4),
-                                    NUMEROCONTACTO = drd.IsDBNull(5) ? string.Empty : drd.GetString(5)
+                              
+                                    PERSONACONTACTO = drd.IsDBNull(3) ? string.Empty : drd.GetString(3)
+                                  
                                 });
                             }
                         }

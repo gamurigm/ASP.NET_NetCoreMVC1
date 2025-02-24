@@ -13,6 +13,30 @@
     *@
 </div>
 
+<fieldset class="mb-4 mt-4">
+    <legend>Guardar Tipo Medicamento</legend>
+    <form class="row g-3" id="frmGuardarTipoMedicamento" method="post">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="nombre">
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Descripcion</label>
+            <input type="text" class="form-control" name="descripcion" maxlength="300" id="descripcionTipoMedicamento">
+        </div>
+      
+    </form>
+    <br />
+    <div class="row g-3">
+        <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary" onclick="guardarTipoMedicamento()">Guardar</button>
+            <button type="submit" class="btn btn-primary" onclick="limpiarTipoMedicamento()">Limpiar</button>
+        </div>
+    </div>
+
+</fieldset>
+
 <div id="div-table">
 
 

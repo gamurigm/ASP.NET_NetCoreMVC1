@@ -7,7 +7,7 @@ namespace Capa_Datos
 {
     public abstract class BaseDatos
     {
-        private static readonly string _cadenaConexion;
+        private static readonly string cadenaConexion;
 
         static BaseDatos()
         {
@@ -16,12 +16,12 @@ namespace Capa_Datos
                 .AddJsonFile("appsettings.json");
 
             var root = builder.Build();
-            _cadenaConexion = root.GetConnectionString("cn");
+            cadenaConexion = root.GetConnectionString("cn");
         }
 
         protected SqlConnection ObtenerConexion()
         {
-            return new SqlConnection(_cadenaConexion);
+            return new SqlConnection(cadenaConexion);
         }
     }
 }

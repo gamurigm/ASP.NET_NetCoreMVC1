@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Capa_Entidad
 {
-    internal class TipoUsuarioCLS
+    public class TipoUsuarioCLS
     {
+        public int IdTipoUsuario { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+        public int Bhabilitado { get; set; }        
+     
     }
 }

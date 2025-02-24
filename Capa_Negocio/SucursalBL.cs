@@ -18,10 +18,17 @@ namespace Capa_Negocio
 
         }
 
-        public List<SucursalCLS> filtrarSucursal(string nombre)
+        public List<SucursalCLS> filtrarSucursal(SucursalCLS objSucursal)
         {
             SucursalDAL obj = new SucursalDAL();
-            return obj.filtrarSucursal(nombre);
+            return obj.filtrarSucursal(objSucursal);
+
+        }
+
+        public int GuardarSucursal(SucursalCLS oSucursalCLS)
+        {
+            SucursalDAL obj = new SucursalDAL();
+            return obj.GuardarSucursal(oSucursalCLS);
 
         }
     }

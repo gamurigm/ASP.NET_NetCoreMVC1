@@ -5,33 +5,28 @@ window.onload = function () {
 
 let objLaboratorio = {
     url: "Laboratorio/listarLaboratorio",
-    cabeceras: ["ID Laboratorio", "Nombre", "Dirección", "Habilitado", "Persona Contacto", "Número Contacto"],
-    propiedades: ["iidlaboratorio", "nombre", "direccion", "bhabilitado", "personacontacto", "numerocontacto"]
+    cabeceras: ["ID Laboratorio", "Nombre", "Dirección", "Persona Contacto"],
+    propiedades: ["iidlaboratorio", "nombre", "direccion", "personacontacto"],
+    contenedorTabla: "contenedorTabla"
 };
 
+
 async function listarLaboratorio() {
-    await pintar(objLaboratorio);
+    pintar(objLaboratorio);
 }
 
-async function filtrarLaboratorio() {
-    let nombre = get("txtNombreBusqueda")
-    if (nombre == "")
-        listarLaboratorio();
-    else {
-
-        objSucursal.url = "Laboratorio/filtrarLaboratorio/?nombre=" + nombre;
-        await pintar(objLaboratorio);
-    }
-}
-
-async function buscarLaboratorio() {
-    let forma = get("frmBusqueda");
+function buscarLaboratorio() {
+    let forma = document.getElementById("frmBusqueda");
     let frm = new FormData(forma);
-    alert("hola buscar lab");
+    fetch_post("Laboratorio/filtrarLaboratorio", "json", frm, function (res) {
+        console.log('Datos recibidos del filtro:', res);
+        objLaboratorio.datos = res;
+        pintar(objLaboratorio); 
+    });
 }
 
-function limpiarControl() {
+function limpiarLaboratorio() {
+    limpiarDatos("frmBusqueda")
     listarLaboratorio();
-    set("nombre", '');
 }
 

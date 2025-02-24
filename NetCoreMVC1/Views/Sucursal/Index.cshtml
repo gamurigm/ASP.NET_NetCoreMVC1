@@ -9,10 +9,50 @@
 <div class="input-group">
     <input id="txtNombreBusqueda" type="text" class="form-control" placeholder="Sucursal" onkeyup="filtrarSucursal()" aria-label="...">
     <button class="btn btn-outline-secondary" type="button" onclick="buscarSucursal()">Button</button>
-    <button id="limpiar" class="btn btn-outline-info" type="button" onclick="limpiarControl()">Limpiar</button>
+    <button id="limpiar" class="btn btn-outline-info" type="button" onclick="limpiarSucursal()">Limpiar</button>
 </div>
 
-<div id="div-table">
+@* <fieldset class="mb-4 mt-4">
+    <legend>Busqueda Sucursal</legend>
+    <form class="row g-3" id="frmBusqueda" method="post">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="nombre">
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Dirección</label>
+            <input type="text" class="form-control" name="direccion" id="direccion">
+        </div>
+      
+    </form> 
+</fieldset>*@
+    <br />
+
+    <fieldset class="mb-4 mt-4">
+        <legend>Guardar Sucursal</legend>
+        <form class="row g-3" id="frmGuardarSucursal" method="post">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="nombre"id="nombre">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Direccion</label>
+                <input type="text" class="form-control" name="direccion"  id="direccion">
+            </div>
+
+        </form>
+
+    <br />
+    <div class="row g-3">
+        <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary" onclick="guardarSucursal()">Guardar</button>
+            <button type="submit" class="btn btn-primary" onclick="limpiarSucursal()">Limpiar</button>
+        </div>
+    </div>
+
+   </fieldset>
+
+    <div id="div-table">
 
 </div>
 

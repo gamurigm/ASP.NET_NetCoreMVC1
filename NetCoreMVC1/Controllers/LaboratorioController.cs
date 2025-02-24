@@ -18,10 +18,17 @@ namespace NetCoreMVC1.Controllers
             return obj.listaLaboratorios();
         }
 
-        public List<LaboratorioCLS> filtrarLaboratoriol(string nombre)
+        public List<LaboratorioCLS> filtrarLaboratorio(LaboratorioCLS objLab)
         {
             LaboratorioBL obj = new LaboratorioBL();
-            return obj.filtrarLaboratorio(nombre);
+            return obj.filtrarLaboratorio(objLab);
         }
+
+        //public int GuardarLaboratorio(LaboratorioCLS objLaboratorioCLS)
+        //{
+        //    LaboratorioBL obj = new LaboratorioBL();
+        //    return obj.GuardarLaboratorio(objLaboratorioCLS);
+
+        //}
     }
 }

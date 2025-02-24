@@ -12,7 +12,7 @@ namespace Capa_Negocio
     {
         public List<UsuarioCLS> listaUsuarios()
         {
-            SucursalDAL obj = new SucursalDAL();
+            UsuarioDAL obj = new UsuarioDAL();
             return obj.listarUsuario();
 
         }

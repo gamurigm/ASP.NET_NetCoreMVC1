@@ -25,5 +25,17 @@ namespace NetCoreMVC1.Controllers
             return obj.filtrarTipoMedicamento(nombre);
         }
 
+        public int GuardarTipoMedicamento(TipoMedicamentoCLS objTipoMedicamentoCLS)
+        {
+            TipoMedicamentoBL obj = new TipoMedicamentoBL();
+            return obj.GuardarTipoMedicamento(objTipoMedicamentoCLS);
+
+        }
+
+        public TipoMedicamentoCLS recuperarTipoMedicamento(int idTipoMedicamento)
+        {
+            return null;
+        }
+
     }
 }

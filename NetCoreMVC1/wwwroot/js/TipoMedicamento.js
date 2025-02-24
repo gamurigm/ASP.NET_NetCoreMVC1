@@ -5,7 +5,10 @@
 let objTipoMedicamento = {
     url: "TipoMedicamento/listarTipoMedicamento",
     cabeceras: ["ID Tipo Medicamento", "Nombre", "Descripción"],
-    propiedades: ["id", "nombre", "descripcion"]
+    propiedades: ["id", "nombre", "descripcion"],
+    editar: true,
+    eliminar: true,
+    propiedadId: "id"
 };
 
 async function listarTipoMedicamento() {
@@ -29,7 +32,31 @@ async function buscarTipoMedicamento() {
     await pintar(objTipoMedicamento);
 }
 
+function guardarTipoMedicamento() {
+    let frmGuardar = document.getElementById("frmGuardarTipoMedicamento")
+    let frm = new FormData(frmGuardar)
+
+    fetch_post("TipoMedicamento/GuardarTipoMedicamento", "text", frm, function (data) {
+        if (data == "1") {
+            listarTipoMedicamento();
+            limpiarDatos("frmGuardarTipoMedicamento");
+        }
+    });
+
+
+}
+
 function limpiarControl() {
     listarTipoMedicamento();
     document.getElementById("txtNombreBusqueda").value = "";
+}
+
+function limpiarTipoMedicamento() {
+    limpiarDatos("frmGuardarTipoMedicamento");
+}
+
+function Editar(id) {
+    console.log("ID recibido:", id);
+    recuperarGenerico("TipoMedicamento/recuperarTipoMedicamento/?id=" + id, "frmGuardarTipoMedicamento")
+   
 }

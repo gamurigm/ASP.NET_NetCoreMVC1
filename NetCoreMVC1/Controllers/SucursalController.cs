@@ -17,10 +17,17 @@ namespace NetCoreMVC1.Controllers
             return obj.listaSucursales();
         }   
 
-        public List<SucursalCLS> filtrarSucursal(string nombre)
+        public List<SucursalCLS> filtrarSucursal(SucursalCLS objSucursal)
         {
             SucursalBL obj = new SucursalBL();
-            return obj.filtrarSucursal(nombre);
+            return obj.filtrarSucursal(objSucursal);
+        }
+
+        public int GuardarSucursal(SucursalCLS objSucursalCLS)
+        {
+            SucursalBL obj = new SucursalBL();
+            return obj.GuardarSucursal(objSucursalCLS);
+
         }
 
     }

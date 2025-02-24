@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Capa_Datos
 {
-    public class UsuarioDAL : BaseDatos
+    public class TipoUsuarioDAL : BaseDatos
     {
-        public List<UsuarioCLS> listarUsuario()
+        public List<TipoUsuarioCLS> listarTipoUsuario()
         {
-            List<UsuarioCLS> lista = new();
+            List<TipoUsuarioCLS> lista = new();
 
             try
             {
@@ -27,13 +27,12 @@ namespace Capa_Datos
                         {
                             while (drd.Read())
                             {
-                                lista.Add(new UsuarioCLS
+                                lista.Add(new TipoUsuarioCLS
                                 {
-                                    IdUsuario = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
-                                    NombreUsuario = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
-                                    IdTipoUsuario = drd.IsDBNull(2) ? 0 : drd.GetInt32(2),
-                                    Contra  = drd.IsDBNull(3) ? string.Empty : drd.GetString(3),
-                                    BHabilitado = drd.IsDBNull(4) ? 0 : drd.GetInt32(4),
+                                    IdTipoUsuario = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
+                                    Nombre = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
+                                    Descripcion = drd.IsDBNull(2) ? string.Empty : drd.GetString(2),
+                                    Bhabilitado = drd.IsDBNull(3) ? 0 : drd.GetInt32(3),
 
                                 });
                             }
@@ -44,20 +43,20 @@ namespace Capa_Datos
             catch (SqlException ex)
             {
                 Console.WriteLine($"Error SQL: {ex.Message}");
-                lista = new List<UsuarioCLS>();
+                lista = new List<TipoUsuarioCLS>();
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error inesperado: {ex.Message}");
-                lista = new List<UsuarioCLS>();
+                lista = new List<TipoUsuarioCLS>();
             }
 
             return lista;
         }
 
-        public List<UsuarioCLS> filtrarUsuario(string nombre)
+        public List<TipoUsuarioCLS> filtrarUsuario(string nombre)
         {
-            List<UsuarioCLS> lista = new();
+            List<TipoUsuarioCLS> lista = new();
 
             try
             {
@@ -74,9 +73,9 @@ namespace Capa_Datos
                         {
                             while (drd.Read())
                             {
-                                lista.Add(new UsuarioCLS
+                                lista.Add(new TipoUsuarioCLS
                                 {
-                                    
+
                                 });
                             }
                         }
@@ -86,12 +85,12 @@ namespace Capa_Datos
             catch (SqlException ex)
             {
                 Console.WriteLine($"Error SQL: {ex.Message}");
-                lista = new List<UsuarioCLS>();
+                lista = new List<TipoUsuarioCLS>();
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error inesperado: {ex.Message}");
-                lista = new List<UsuarioCLS>();
+                lista = new List<TipoUsuarioCLS>();
             }
 
             return lista;
