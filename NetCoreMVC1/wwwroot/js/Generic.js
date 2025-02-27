@@ -20,6 +20,14 @@ function recuperarGenerico(url, idFormulario) {
     let nombreName;
 
     fetch_get(url, "json", function (data) {
+
+        console.log("Datos recibidos en Editar:", data);
+
+            if (!data) {
+                alert("Error al recuperar los datos");
+                return;
+            }
+
         for (let i = 0; i < elementosName.length; i++) {
             nombreName = elementosName[i].name;
             setName(nombreName, data[nombreName]);
@@ -28,8 +36,8 @@ function recuperarGenerico(url, idFormulario) {
 }
 
 
-function getName(nameControl, val) {
-    return document.getElementsByName(nameControl)[0].value = val;
+function getName(nameControl) {
+    return document.getElementsByName(nameControl)[0].value;
 }
 function setName(nameControl, val){
     return document.getElementsByName(nameControl)[0].value = val;
@@ -38,7 +46,7 @@ function setName(nameControl, val){
 async function fetch_get(url, tipoRespuesta, cb) {
 
     try {
-        let raiz = document.getElementById('oculto')?.value || '';  // Evita errores si el elemento no existe
+        let raiz = document.getElementById('oculto')?.value;
         let urlAbsoluta = `${window.location.protocol}//${window.location.host}/${raiz}${url}`;
 
         let res = await fetch(urlAbsoluta);
@@ -140,7 +148,7 @@ function generarTabla(res) {
 
         if (objConfigurationGlobal.editar == true || objConfigurationGlobal.eliminar == true) {
             let propiedadId = objConfigurationGlobal.propiedadId;
-            contenido += `<td>`;
+            contenido += "<td>";
             if (objConfigurationGlobal.editar == true) {
                 contenido += `<i onclick="Editar(${obj[propiedadId]})" class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                   <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
@@ -149,18 +157,74 @@ function generarTabla(res) {
             }
             contenido += " ";
             if (objConfigurationGlobal.eliminar == true) {
-                contenido += `<i onclick="Eliminar(${propiedadId})" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                contenido += `<i onclick="Eliminar(${obj[propiedadId]})" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                   <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
                   <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
                 </svg></i>`
             }
-            contenido += `<td>`;
+            contenido += "<td>";
            
         }
         contenido += "</tr>";
         
     }
     contenido += "</tbody></table>";
-    return contenido;
     console.log("Datos recibidos para la tabla:", res);
+    return contenido;
+   
 }
+
+function confirmacion(titulo="Confirmacion", texto="Desasea guardar los cambios?", callback) {
+    Swal.fire({
+        title: titulo,
+        text: texto,
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "SI",
+        cancelButtonText: "NO"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            callback()
+        }
+    });
+}
+
+function Exito() {
+    Swal.fire(
+       
+        'Accion Exitosa'
+    )
+}
+
+//function Exito() {
+//    toastr.options = {
+//        //"closeButton": false,
+//        //"debug": false,
+//        //"newestOnTop": false,
+//        //"progressBar": false,
+//        //"positionClass": "toast-top-right",
+//        //"preventDuplicates": false,
+//        //"onclick": null,
+//        //"showDuration": "300",
+//        //"hideDuration": "1000",
+//        //"timeOut": "5000",
+//        "extendedTimeOut": "1000",
+//        "showEasing": "swing",
+//        "hideEasing": "linear",
+//        "showMethod": "fadeIn",
+//        "hideMethod": "fadeOut"
+//    }
+//        toastr.success('Los datos se guardaron correctamente');
+//}
+
+function Error() {
+    console.log("Se ha llamado a la función Error.");
+    //Swal.fire({
+    //    icon: "error",
+    //    title: "Oops...",
+    //    text: "Algo Ocurrio!",
+    //    footer: '<a href="#">porqué tengo este error?</a>'
+    // });
+}        

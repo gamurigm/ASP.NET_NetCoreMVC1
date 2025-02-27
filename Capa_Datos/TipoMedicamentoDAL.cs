@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -10,7 +11,6 @@ namespace Capa_Datos
 {
     public class TipoMedicamentoDAL : BaseDatos
     {
-
         public TipoMedicamentoCLS recuperarTipoMedicamento(int id)
         {
             TipoMedicamentoCLS oTipoMedicamentoCLS = null;
@@ -21,14 +21,14 @@ namespace Capa_Datos
                 {
                     cn.Open();
 
-                    using (SqlCommand cmd = new SqlCommand("SELECT iidtipomedicamento as id, nombre, descripcion FROM TipoMedicamento WHERE BHABILITADO = 1 AND IIDTIPOMEDICAMENTO = @id", cn))
+                    using (SqlCommand cmd = new SqlCommand("SELECT iidtipomedicamento, nombre, descripcion FROM TipoMedicamento WHERE BHABILITADO = 1 AND IIDTIPOMEDICAMENTO = @id", cn))
                     {
                         cmd.CommandType = CommandType.Text;
                         cmd.Parameters.AddWithValue("@id", id); 
 
                         using (SqlDataReader drd = cmd.ExecuteReader())
                         {
-                            if (drd.Read()) // Solo se lee un registro
+                            if (drd.Read()) 
                             {
                                 oTipoMedicamentoCLS = new TipoMedicamentoCLS
                                 {
@@ -50,36 +50,57 @@ namespace Capa_Datos
                 Console.WriteLine($"Error inesperado: {ex.Message}");
             }
 
-            return oTipoMedicamentoCLS; // Retorna null si no encuentra el medicamento
+            return oTipoMedicamentoCLS; 
         }
 
         public int GuardarTipoMedicamento(TipoMedicamentoCLS oTipoMedicamentoCLS)
         {
-            int rpta =0;
+            int rpta = 0;
 
             using (SqlConnection cn = ObtenerConexion())
             {
                 try
                 {
                     cn.Open();
+                    string sqlCommand;
 
-                    using (SqlCommand cmd = new SqlCommand("INSERT INTO TipoMedicamento(NOMBRE, DESCRIPCION, BHABILITADO) VALUES(@nombre, @descripcion, 1)", cn))
+                    if (oTipoMedicamentoCLS.id == 0)
+                    {
+                        // Inserción
+                        sqlCommand = "INSERT INTO TipoMedicamento(NOMBRE, DESCRIPCION, BHABILITADO) VALUES(@nombre, @descripcion, 1)";
+                    }
+                    else
+                    {
+                        // Actualización
+                        sqlCommand = "UPDATE TipoMedicamento SET NOMBRE = @nombre, DESCRIPCION = @descripcion WHERE IIDTIPOMEDICAMENTO = @id";
+                    }
+
+                    using (SqlCommand cmd = new SqlCommand(sqlCommand, cn))
                     {
                         cmd.CommandType = CommandType.Text;
                         cmd.Parameters.AddWithValue("@nombre", oTipoMedicamentoCLS.nombre);
                         cmd.Parameters.AddWithValue("@descripcion", oTipoMedicamentoCLS.descripcion);
-                   
+
+                        if (oTipoMedicamentoCLS.id != 0)
+                        {
+                            cmd.Parameters.AddWithValue("@id", oTipoMedicamentoCLS.id);
+                        }
+
                         rpta = cmd.ExecuteNonQuery();
                     }
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Error SQL: {ex.Message}");
+                }
+                finally
+                {
                     cn.Close();
                 }
             }
             return rpta;
         }
+
         public List<TipoMedicamentoCLS> listarTipoMedicamento()
         {
             List<TipoMedicamentoCLS> lista = new();
@@ -160,6 +181,45 @@ namespace Capa_Datos
             }
 
             return lista;
+        }
+
+        public int Eliminar(int id)
+        {
+            int rpta = 0;
+
+            using (SqlConnection cn = ObtenerConexion())
+            {
+                try
+                {
+                    cn.Open();
+
+                    // Consulta DELETE para eliminar el registro
+                    string sqlCommand = "DELETE FROM TipoMedicamento WHERE IIDTIPOMEDICAMENTO = @id";
+
+                    using (SqlCommand cmd = new SqlCommand(sqlCommand, cn))
+                    {
+                        cmd.CommandType = CommandType.Text;
+
+                        // Se asegura de que el id sea diferente de 0 antes de eliminar
+                        if (id != 0)
+                        {
+                            cmd.Parameters.AddWithValue("@id", id);
+                        }
+
+                        // Ejecutar el comando SQL
+                        rpta = cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error SQL: {ex.Message}");
+                }
+                finally
+                {
+                    cn.Close();
+                }
+            }
+            return rpta;
         }
 
     }

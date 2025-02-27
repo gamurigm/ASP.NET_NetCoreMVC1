@@ -1,0 +1,173 @@
+﻿/* Variables de colores */
+:root {
+    --primary-gradient-start: #4158D0;
+    --primary-gradient-mid: #C850C0;
+    --primary-gradient-end: #FFCC70;
+    --body-bg: #f8f9fa;
+    --text-color: #333;
+    --nav-text: #fff;
+    --footer-text: #fff;
+    --sidebar-bg: #fff;
+    --sidebar-width: 250px;
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilo para el Header y Navbar */
+.banner {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--box-shadow);
+}
+
+    .banner nav {
+        background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-mid), var(--primary-gradient-end));
+        padding: 0.8rem 0; /* Eliminado padding horizontal */
+    }
+
+/* Ajuste para alinear a la izquierda */
+.top-header {
+    display: flex;
+    align-items: center;
+    padding-left: 15px; /* Añadir padding solo a la izquierda */
+}
+
+/* Estilo para el menú hamburguesa */
+.navBurger {
+    cursor: pointer;
+    margin-right: 15px;
+    z-index: 101;
+}
+
+.burger {
+    width: 25px;
+    height: 3px;
+    background-color: var(--nav-text);
+    position: relative;
+    transition: all var(--transition-speed);
+}
+
+    .burger::before,
+    .burger::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: var(--nav-text);
+        transition: all var(--transition-speed);
+    }
+
+    .burger::before {
+        transform: translateY(-8px);
+    }
+
+    .burger::after {
+        transform: translateY(8px);
+    }
+
+/* Estilo para el menú de navegación - ALINEADO A LA IZQUIERDA */
+.nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 15px; /* Alineado a la izquierda */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: flex-start; /* Alineado a la izquierda */
+}
+
+    .nav li {
+        margin: 0; /* Eliminado margen horizontal */
+        margin-right: 15px; /* Solo margen a la derecha para separación */
+    }
+
+        .nav li a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            display: block; /* Mejor para clickear */
+            white-space: nowrap; /* Evita que el texto se rompa */
+        }
+
+/* Estilos para el contenedor principal */
+.container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo para el Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente oculto */
+    width: var(--sidebar-width);
+    height: 100%;
+    background-color: var(--sidebar-bg);
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: all var(--transition-speed);
+    padding-top: 60px; /* Espacio para el navbar */
+}
+
+    .sidebar.active {
+        left: 0; /* Visible cuando está activo */
+    }
+
+/* Contenido del sidebar */
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .sidebar-menu li a {
+        display: block;
+        padding: 15px 20px;
+        color: var(--text-color);
+        text-decoration: none;
+        transition: all var(--transition-speed);
+        border-left: 4px solid transparent;
+    }
+
+        .sidebar-menu li a:hover {
+            background-color: rgba(65, 88, 208, 0.1);
+            border-left: 4px solid var(--primary-gradient-start);
+        }
+
+/* Overlay para cuando el sidebar está abierto */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+}
+
+    .overlay.active {
+        display: block;
+    }
+
+
+
+/* Media queries para responsividad */
+@media screen and (max-width: 768px) {
+    .nav {
+        padding-top: 10px; /* Espacio adicional para separar del botón hamburguesa */
+    }
+}

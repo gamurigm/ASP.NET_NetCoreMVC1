@@ -10,35 +10,7 @@ using System.Threading.Tasks;
 namespace Capa_Datos
 {
     public class LaboratorioDAL : BaseDatos
-    {
-
-        //public int GuardarLaboratorio(LaboratorioCLS oLaboratorioCLS)
-        //{
-        //    int rpta = 0;
-
-        //    using (SqlConnection cn = ObtenerConexion())
-        //    {
-        //        try
-        //        {
-        //            cn.Open();
-
-        //            using (SqlCommand cmd = new SqlCommand("INSERT INTO Laboratorio", cn))
-        //            {
-        //                cmd.CommandType = CommandType.Text;
-        //                cmd.Parameters.AddWithValue("@nombre", oLaboratorioCLS.NOMBRE);
-        //                cmd.Parameters.AddWithValue("@direccion", oLaboratorioCLS.DIRECCION);
-
-        //                rpta = cmd.ExecuteNonQuery();
-        //            }
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            Console.WriteLine($"Error SQL: {ex.Message}");
-        //            cn.Close();
-        //        }
-        //    }
-        //    return rpta;
-        //}
+    { 
         public List<LaboratorioCLS> listarLaboratorio()
         {
             List<LaboratorioCLS> lista = new();
@@ -130,5 +102,33 @@ namespace Capa_Datos
 
             return lista;
         }
+
+        //public int GuardarLaboratorio(LaboratorioCLS oLaboratorioCLS)
+        //{
+        //    int rpta = 0;
+
+        //    using (SqlConnection cn = ObtenerConexion())
+        //    {
+        //        try
+        //        {
+        //            cn.Open();
+
+        //            using (SqlCommand cmd = new SqlCommand("INSERT INTO Laboratorio", cn))
+        //            {
+        //                cmd.CommandType = CommandType.Text;
+        //                cmd.Parameters.AddWithValue("@nombre", oLaboratorioCLS.NOMBRE);
+        //                cmd.Parameters.AddWithValue("@direccion", oLaboratorioCLS.DIRECCION);
+
+        //                rpta = cmd.ExecuteNonQuery();
+        //            }
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            Console.WriteLine($"Error SQL: {ex.Message}");
+        //            cn.Close();
+        //        }
+        //    }
+        //    return rpta;
+        //}
     }
 }

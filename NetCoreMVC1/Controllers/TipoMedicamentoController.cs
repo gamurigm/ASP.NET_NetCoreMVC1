@@ -1,4 +1,5 @@
-﻿using Capa_Entidad;
+﻿using Capa_Datos;
+using Capa_Entidad;
 using Capa_Negocio;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Host;
@@ -32,10 +33,16 @@ namespace NetCoreMVC1.Controllers
 
         }
 
-        public TipoMedicamentoCLS recuperarTipoMedicamento(int idTipoMedicamento)
+        public TipoMedicamentoCLS recuperarTipoMedicamento(int id)
         {
-            return null;
+            TipoMedicamentoBL obj = new TipoMedicamentoBL();
+            return obj.recuperarTipoMedicamento(id);
         }
 
+        public int Eliminar(int id)
+        {
+            TipoMedicamentoBL obj = new TipoMedicamentoBL();
+            return obj.Eliminar(id);
+        }
     }
 }

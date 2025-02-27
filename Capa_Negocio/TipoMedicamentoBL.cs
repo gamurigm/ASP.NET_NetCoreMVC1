@@ -21,15 +21,29 @@ namespace Capa_Negocio
 
         public int GuardarTipoMedicamento(TipoMedicamentoCLS oTipoMedicamentoCLS)
         {
+
+            if(string.IsNullOrEmpty(oTipoMedicamentoCLS.nombre))
+            {
+                
+                return 0; // indicar error
+            }
             TipoMedicamentoDAL obj = new TipoMedicamentoDAL();
             return obj.GuardarTipoMedicamento(oTipoMedicamentoCLS);
 
         }
 
-        public TipoMedicamentoCLS recuperarTipoMedicamento(int idTipoMedicamento)
+        public TipoMedicamentoCLS recuperarTipoMedicamento(int id)
         {
             TipoMedicamentoDAL obj = new TipoMedicamentoDAL();
-            return obj.recuperarTipoMedicamento(idTipoMedicamento);
+            return obj.recuperarTipoMedicamento(id);
         }
+
+        public int Eliminar(int id)
+        {
+            TipoMedicamentoDAL obj = new TipoMedicamentoDAL();
+            return obj.Eliminar(id);
+        }
+
+
     }
 }

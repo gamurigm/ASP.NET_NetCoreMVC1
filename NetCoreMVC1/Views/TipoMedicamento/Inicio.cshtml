@@ -13,10 +13,14 @@
     *@
 </div>
 
-<fieldset class="mb-4 mt-4">
+@* <fieldset class="mb-4 mt-4">
     <legend>Guardar Tipo Medicamento</legend>
     <form class="row g-3" id="frmGuardarTipoMedicamento" method="post">
-        <div class="col-md-6">
+        <div class="col-md-2">
+            <label for="idMedicamento" class="form-label">Id Tipo Medicamento</label>
+            <input type="text" class="form-control" id="id" name="id" placeholder="Id" >
+        </div>
+        <div class="col-md-4">
             <label for="inputEmail4" class="form-label">Nombre</label>
             <input type="text" class="form-control" name="nombre" id="nombre">
         </div>
@@ -26,6 +30,8 @@
             <input type="text" class="form-control" name="descripcion" maxlength="300" id="descripcionTipoMedicamento">
         </div>
       
+      
+
     </form>
     <br />
     <div class="row g-3">
@@ -35,7 +41,127 @@
         </div>
     </div>
 
-</fieldset>
+</fieldset> *@
+
+
+<div id="save-modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="modal-label" class="modal-title">Editar empleado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <form id="modal-form" method="post" class="row">
+                    <div id="modal-id-group" class="col-2 mb-2">
+                        <label class="col-form-label mb-0">Id:</label>
+                        <input id="modal-id-input" class="form-control" name="Id" type="text" placeholder="?" contenteditable="false" required readonly>
+                    </div>
+                    <div class="col-10 mb-2">
+                        <label class="col-form-label mb-0">Nombre:</label>
+                        <input id="modal-nombre-input" class="form-control" name="nombre" type="text" required>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <label class="col-form-label mb-0">Descripcion:</label>
+                        <input id="modal-descripcion-input" class="form-control" name="Descripcion" type="text" required>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary w-100" onclick="guardarTipoMedicamento()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Modal general */
+    .modal-content {
+        background-color: #f9f9f9; /* Color neutro para el fondo */
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Encabezado del modal */
+    .modal-header {
+        background-color: #e0e0e0; /* Color suave para el fondo */
+        border-bottom: 1px solid #ccc;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 15px;
+    }
+
+    .modal-title {
+        color: #333; /* Texto oscuro pero suave */
+        font-size: 1.25rem;
+    }
+
+    .btn-close {
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: #888;
+    }
+
+        .btn-close:hover {
+            color: #444;
+        }
+
+    /* Cuerpo del modal */
+    .modal-body {
+        padding: 20px;
+        background-color: #fafafa;
+        color: #333;
+    }
+
+    /* Campos del formulario */
+    .col-form-label {
+        color: #555;
+        font-size: 0.9rem;
+    }
+
+    .form-control {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1rem;
+        color: #333;
+    }
+
+        .form-control:focus {
+            border-color: #5e9ce0;
+            box-shadow: 0 0 0 0.25rem rgba(94, 156, 224, 0.25);
+        }
+
+    /* Botones */
+    .btn-primary {
+        background-color: #4e8ef7; /* Color azul suave */
+        border: none;
+        padding: 10px;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background-color: #3578e5;
+        }
+
+    /* Estilos para el botón de guardar */
+    .modal-footer {
+        padding: 15px;
+        background-color: #f1f1f1;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .btn-primary.w-100 {
+        width: 100%;
+    }
+</style>
+
 
 <div id="div-table">
 
