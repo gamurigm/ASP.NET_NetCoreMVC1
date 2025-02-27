@@ -46,8 +46,7 @@ async function guardarTipoMedicamento() {
             if(parseInt(res)) $('#save-modal').modal('hide');
            
         });
-    });
-    
+    });   
 }
 
 function limpiarControl() {
@@ -79,10 +78,11 @@ function Eliminar(id) {
             fetch_get("TipoMedicamento/Eliminar/?id=" + id, "text", function (data) {
                 if (data == "1") {
                     listarTipoMedicamento();
+                    
                 }
             });
-        });
+        }); 
     });
 }
 
-}
+

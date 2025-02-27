@@ -191,35 +191,35 @@ function confirmacion(titulo="Confirmacion", texto="Desasea guardar los cambios?
     });
 }
 
-function Exito() {
-    Swal.fire(
-       
-        'Accion Exitosa'
-    )
-}
-
 //function Exito() {
-//    toastr.options = {
-//        //"closeButton": false,
-//        //"debug": false,
-//        //"newestOnTop": false,
-//        //"progressBar": false,
-//        //"positionClass": "toast-top-right",
-//        //"preventDuplicates": false,
-//        //"onclick": null,
-//        //"showDuration": "300",
-//        //"hideDuration": "1000",
-//        //"timeOut": "5000",
-//        "extendedTimeOut": "1000",
-//        "showEasing": "swing",
-//        "hideEasing": "linear",
-//        "showMethod": "fadeIn",
-//        "hideMethod": "fadeOut"
-//    }
-//        toastr.success('Los datos se guardaron correctamente');
+//    Swal.fire(
+       
+//        'Accion Exitosa'
+//    )
 //}
 
-function Error() {
+function Exito() {
+    toastr.options = {
+        //"closeButton": false,
+        //"debug": false,
+        //"newestOnTop": false,
+        //"progressBar": false,
+        //"positionClass": "toast-top-right",
+        //"preventDuplicates": false,
+        //"onclick": null,
+        //"showDuration": "300",
+        //"hideDuration": "1000",
+        //"timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    }
+        toastr.success('Los datos se guardaron correctamente');
+}
+
+function ErrorG() {
     console.log("Se ha llamado a la función Error.");
     //Swal.fire({
     //    icon: "error",
@@ -227,4 +227,22 @@ function Error() {
     //    text: "Algo Ocurrio!",
     //    footer: '<a href="#">porqué tengo este error?</a>'
     // });
+    toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": false,
+        "positionClass": "toast-top-full-width",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    }
+    toastr.error("Algo ocurrió. Inténtalo de nuevo.");
 }        
