@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>o7hn452v2t</Fingerprint>
-      <Integrity>5E5apwHw9+VbCVMRWu3x2r8Dw2UmOzNGnyN0isLs/KE=</Integrity>
+      <Fingerprint>yvhv887c55</Fingerprint>
+      <Integrity>svsJ4B3a7W6y0nZ5nq6/Ajmo0y3DNkZdPUHGJRTnGWU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\sidebar.css'))</OriginalItemSpec>
@@ -210,8 +210,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ykr511lmmp</Fingerprint>
-      <Integrity>HtC328OinjLookExn7nlR2PfyqMutGpRFvKdc08YLlA=</Integrity>
+      <Fingerprint>rpdmgnvllz</Fingerprint>
+      <Integrity>7+p90nylB/9CZnCCm1yLP7skJpYiAext8617IBUgyPU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\TipoMedicamento.js'))</OriginalItemSpec>
