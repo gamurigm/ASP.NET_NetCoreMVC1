@@ -1,11 +1,3 @@
-C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.csproj.AssemblyReference.cache
-C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.AssemblyInfoInputs.cache
-C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.AssemblyInfo.cs
-C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.csproj.CoreCompileInputs.cache
-C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.RazorAssemblyInfo.cache
-C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.RazorAssemblyInfo.cs
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\bin\Debug\net8.0\appsettings.json
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\bin\Debug\net8.0\NetCoreMVC1.staticwebassets.runtime.json
@@ -267,6 +259,14 @@ C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\bin\Debug\net8.0\Capa_Negoci
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\bin\Debug\net8.0\Capa_Entidad.pdb
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\bin\Debug\net8.0\Capa_Negocio.pdb
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\bin\Debug\net8.0\Capa_Datos.pdb
+C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.csproj.AssemblyReference.cache
+C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.AssemblyInfoInputs.cache
+C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.AssemblyInfo.cs
+C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.csproj.CoreCompileInputs.cache
+C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.RazorAssemblyInfo.cache
+C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.RazorAssemblyInfo.cs
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\scopedcss\bundle\NetCoreMVC1.styles.css
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\scopedcss\projectbundle\NetCoreMVC1.bundle.scp.css

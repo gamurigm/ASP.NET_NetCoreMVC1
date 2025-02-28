@@ -7,7 +7,9 @@ let objLaboratorio = {
     url: "Laboratorio/listarLaboratorio",
     cabeceras: ["ID Laboratorio", "Nombre", "Dirección", "Persona Contacto"],
     propiedades: ["iidlaboratorio", "nombre", "direccion", "personacontacto"],
-    contenedorTabla: "contenedorTabla"
+    edit: true,
+    delete: true,
+    id: "iidlaboratorio"
 };
 
 
