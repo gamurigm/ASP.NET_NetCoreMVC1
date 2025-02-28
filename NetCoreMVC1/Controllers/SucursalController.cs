@@ -23,10 +23,10 @@ namespace NetCoreMVC1.Controllers
             return obj.filtrarSucursal(objSucursal);
         }
 
-        public int GuardarSucursal(SucursalCLS objSucursalCLS)
+        public int GuardarSucursal(SucursalCLS Sucursal)
         {
             SucursalBL obj = new SucursalBL();
-            return obj.GuardarSucursal(objSucursalCLS);
+            return obj.GuardarSucursal(Sucursal);
 
         }
 

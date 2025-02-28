@@ -9,7 +9,7 @@ namespace Capa_Datos
 {
     public class SucursalDAL : BaseDatos
     {
-        public int GuardarSucursal(SucursalCLS oSucursalCLS)
+        public int GuardarSucursal(SucursalCLS sucursal)
         {
             int rpta = 0;
 
@@ -18,12 +18,28 @@ namespace Capa_Datos
                 try
                 {
                     cn.Open();
+                    string sqlCommand;
 
-                    using (SqlCommand cmd = new SqlCommand("INSERT INTO Sucursal(NOMBRE, DIRECCION, BHABILITADO) VALUES(@nombre, @direccion, 1)", cn))
+                    if (sucursal.id == 0)
+                    {
+                        sqlCommand = "INSERT INTO Sucursal (nombre, direccion, BHABILITADO) VALUES (@nombre, @direccion, 1)";
+                    }
+                    else
+                    {
+                        sqlCommand = "UPDATE Sucursal SET nombre = @nombre, direccion = @direccion WHERE IIDSUCURSAL = @id";
+                    }
+
+                    using (SqlCommand cmd = new SqlCommand(sqlCommand, cn))
                     {
                         cmd.CommandType = CommandType.Text;
-                        cmd.Parameters.AddWithValue("@nombre", oSucursalCLS.NOMBRE);
-                        cmd.Parameters.AddWithValue("@direccion", oSucursalCLS.DIRECCION);
+
+                        if (sucursal.id != 0)
+                        {
+                            cmd.Parameters.AddWithValue("@id", sucursal.id);
+                        }
+
+                        cmd.Parameters.AddWithValue("@nombre", sucursal.NOMBRE);
+                        cmd.Parameters.AddWithValue("@direccion", sucursal.DIRECCION);
 
                         rpta = cmd.ExecuteNonQuery();
                     }
@@ -31,6 +47,10 @@ namespace Capa_Datos
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Error SQL: {ex.Message}");
+                    rpta = 0;
+                }
+                finally
+                {
                     cn.Close();
                 }
             }

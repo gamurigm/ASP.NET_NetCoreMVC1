@@ -30,14 +30,16 @@ async function buscarSucursal() {
 }
 
 function guardarSucursal() {
-    let frmGuardar = document.getElementById("frmGuardarSucursal")
+    let frmGuardar = document.getElementById("modal-form")
     let frm = new FormData(frmGuardar)
 
     fetch_post("Sucursal/GuardarSucursal", "text", frm, function (data) {
         if (data == "1") {
+            Exito();
             listarSucursal();
-            limpiarDatos("frmGuardarSucursal");
+            limpiarDatos("modal-form");
         }
+        if (parseInt(data)) $('#save-modal').modal('hide');
     });
 
 

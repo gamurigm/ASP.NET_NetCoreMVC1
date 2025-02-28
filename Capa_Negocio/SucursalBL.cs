@@ -25,10 +25,10 @@ namespace Capa_Negocio
 
         }
 
-        public int GuardarSucursal(SucursalCLS oSucursalCLS)
+        public int GuardarSucursal(SucursalCLS Sucursal)
         {
             SucursalDAL obj = new SucursalDAL();
-            return obj.GuardarSucursal(oSucursalCLS);
+            return obj.GuardarSucursal(Sucursal);
 
         }
 
