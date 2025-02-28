@@ -8,10 +8,10 @@ let urlED = "Laboratorio/recuperarLaboratorio?id="
 let objLaboratorio = {
     url: "Laboratorio/listarLaboratorio",
     cabeceras: ["ID Laboratorio", "Nombre", "Dirección", "Persona Contacto"],
-    propiedades: ["iidlaboratorio", "nombre", "direccion", "personacontacto"],
+    propiedades: ["id", "nombre", "direccion", "personacontacto"],
     edit: true,
     delete: true,
-    id: "iidlaboratorio"
+    id: "id"
 };
 
 

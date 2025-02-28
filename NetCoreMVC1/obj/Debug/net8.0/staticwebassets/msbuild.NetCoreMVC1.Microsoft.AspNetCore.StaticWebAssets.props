@@ -138,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>48piw7jsgb</Fingerprint>
-      <Integrity>NBwlcshDbdtU/fo1EsJvJqvQpxh/HXhFO2/loki9ygY=</Integrity>
+      <Fingerprint>vq2n7v2iqz</Fingerprint>
+      <Integrity>Wa9do4FZQ2K01vA6ShMnTalOOWswGUAHuhSN+kw/O+M=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Laboratorio.js'))</OriginalItemSpec>

@@ -659,51 +659,6 @@
       ]
     },
     {
-      "Route": "js/Laboratorio.48piw7jsgb.js",
-      "AssetFile": "js/Laboratorio.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1845"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NBwlcshDbdtU/fo1EsJvJqvQpxh/HXhFO2/loki9ygY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:36:30 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "48piw7jsgb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-NBwlcshDbdtU/fo1EsJvJqvQpxh/HXhFO2/loki9ygY="
-        },
-        {
-          "Name": "label",
-          "Value": "js/Laboratorio.js"
-        }
-      ]
-    },
-    {
       "Route": "js/Laboratorio.js",
       "AssetFile": "js/Laboratorio.js",
       "Selectors": [],
@@ -718,7 +673,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1845"
+          "Value": "1821"
         },
         {
           "Name": "Content-Type",
@@ -726,17 +681,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NBwlcshDbdtU/fo1EsJvJqvQpxh/HXhFO2/loki9ygY=\""
+          "Value": "\"Wa9do4FZQ2K01vA6ShMnTalOOWswGUAHuhSN+kw/O+M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:36:30 GMT"
+          "Value": "Fri, 28 Feb 2025 14:13:14 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NBwlcshDbdtU/fo1EsJvJqvQpxh/HXhFO2/loki9ygY="
+          "Value": "sha256-Wa9do4FZQ2K01vA6ShMnTalOOWswGUAHuhSN+kw/O+M="
+        }
+      ]
+    },
+    {
+      "Route": "js/Laboratorio.vq2n7v2iqz.js",
+      "AssetFile": "js/Laboratorio.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1821"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wa9do4FZQ2K01vA6ShMnTalOOWswGUAHuhSN+kw/O+M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 14:13:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vq2n7v2iqz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wa9do4FZQ2K01vA6ShMnTalOOWswGUAHuhSN+kw/O+M="
+        },
+        {
+          "Name": "label",
+          "Value": "js/Laboratorio.js"
         }
       ]
     },
