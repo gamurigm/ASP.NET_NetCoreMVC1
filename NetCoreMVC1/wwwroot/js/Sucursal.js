@@ -6,11 +6,11 @@ window.onload = function () {
 let objSucursal = {
     url: "Sucursal/listarSucursal",
     cabeceras: ["ID Sucursal", "Nombre", "Dirección"],
-    propiedades: ["iidsucursal", "nombre", "direccion"],
+    propiedades: ["id", "nombre", "direccion"],
     //contenedorTabla: "contenedorTabla"
     editar: true,
     eliminar: true,
-    propiedadId: "iidsucursal"
+    propiedadId: "id"
 };
 
 async function listarSucursal() {

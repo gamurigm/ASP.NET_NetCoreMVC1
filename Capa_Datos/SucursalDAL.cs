@@ -55,7 +55,7 @@ namespace Capa_Datos
                             {
                                 lista.Add(new SucursalCLS
                                 {
-                                    IIDSUCURSAL = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
+                                    id = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
                                     NOMBRE = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
                                     DIRECCION = drd.IsDBNull(2) ? string.Empty : drd.GetString(2)
                                 });
@@ -100,7 +100,7 @@ namespace Capa_Datos
                             {
                                 lista.Add(new SucursalCLS
                                 {
-                                    IIDSUCURSAL = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
+                                    id = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
                                     NOMBRE = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
                                     DIRECCION = drd.IsDBNull(2) ? string.Empty : drd.GetString(2)
                                 });
@@ -144,7 +144,7 @@ namespace Capa_Datos
                             {
                                 oSucursalCLS = new SucursalCLS
                                 {
-                                    IIDSUCURSAL = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
+                                    id = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
                                     NOMBRE = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
                                     DIRECCION = drd.IsDBNull(2) ? string.Empty : drd.GetString(2)
                                 };

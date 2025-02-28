@@ -8,7 +8,7 @@ namespace Capa_Entidad
 {
     public class SucursalCLS
     {
-        public int IIDSUCURSAL { get; set; }
+        public int id { get; set; }
         public string NOMBRE { get; set; }
         public string DIRECCION { get; set; }
     }
