@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ncSSn03fUQKUJMH3RNwHcILw9d9AWf2BakCQaS4+vXg=",
+  "Hash": "rjwnGzX1FcAEEsmuUIbSHDfGNXu8Gp5cTixUAL4ND3k=",
   "Source": "NetCoreMVC1",
   "BasePath": "_content/NetCoreMVC1",
   "Mode": "Default",
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "x4pq93re67",
-      "Integrity": "PzkmhHgri1GWwHnVfkpQfO+2/Mjn9caFDm16PCYiVTc=",
+      "Fingerprint": "48piw7jsgb",
+      "Integrity": "NBwlcshDbdtU/fo1EsJvJqvQpxh/HXhFO2/loki9ygY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Laboratorio.js"
@@ -304,8 +304,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pxn6n6662y",
-      "Integrity": "UxI0jOFOoALQsbSoXKNZ5sDRkyhpurlz7iVN9mgJSHg=",
+      "Fingerprint": "8jp1g2mv96",
+      "Integrity": "hK9G7KM8uxJNNrhpizfx+UgB3XM/N8vCTdhu3jGUMIY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Sucursal.js"
@@ -2147,6 +2147,51 @@
       ]
     },
     {
+      "Route": "js/Laboratorio.48piw7jsgb.js",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Laboratorio.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1845"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NBwlcshDbdtU/fo1EsJvJqvQpxh/HXhFO2/loki9ygY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 12:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "48piw7jsgb"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Laboratorio.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NBwlcshDbdtU/fo1EsJvJqvQpxh/HXhFO2/loki9ygY="
+        }
+      ]
+    },
+    {
       "Route": "js/Laboratorio.js",
       "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Laboratorio.js",
       "Selectors": [],
@@ -2157,7 +2202,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "881"
+          "Value": "1845"
         },
         {
           "Name": "Content-Type",
@@ -2165,11 +2210,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PzkmhHgri1GWwHnVfkpQfO+2/Mjn9caFDm16PCYiVTc=\""
+          "Value": "\"NBwlcshDbdtU/fo1EsJvJqvQpxh/HXhFO2/loki9ygY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 03:55:22 GMT"
+          "Value": "Fri, 28 Feb 2025 12:36:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2179,52 +2224,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PzkmhHgri1GWwHnVfkpQfO+2/Mjn9caFDm16PCYiVTc="
-        }
-      ]
-    },
-    {
-      "Route": "js/Laboratorio.x4pq93re67.js",
-      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Laboratorio.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "881"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PzkmhHgri1GWwHnVfkpQfO+2/Mjn9caFDm16PCYiVTc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 03:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "x4pq93re67"
-        },
-        {
-          "Name": "label",
-          "Value": "js/Laboratorio.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-PzkmhHgri1GWwHnVfkpQfO+2/Mjn9caFDm16PCYiVTc="
+          "Value": "sha256-NBwlcshDbdtU/fo1EsJvJqvQpxh/HXhFO2/loki9ygY="
         }
       ]
     },
@@ -2475,6 +2475,51 @@
       ]
     },
     {
+      "Route": "js/Sucursal.8jp1g2mv96.js",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Sucursal.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hK9G7KM8uxJNNrhpizfx+UgB3XM/N8vCTdhu3jGUMIY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 12:27:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8jp1g2mv96"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Sucursal.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hK9G7KM8uxJNNrhpizfx+UgB3XM/N8vCTdhu3jGUMIY="
+        }
+      ]
+    },
+    {
       "Route": "js/Sucursal.js",
       "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Sucursal.js",
       "Selectors": [],
@@ -2485,7 +2530,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2175"
+          "Value": "2215"
         },
         {
           "Name": "Content-Type",
@@ -2493,11 +2538,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UxI0jOFOoALQsbSoXKNZ5sDRkyhpurlz7iVN9mgJSHg=\""
+          "Value": "\"hK9G7KM8uxJNNrhpizfx+UgB3XM/N8vCTdhu3jGUMIY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:22:14 GMT"
+          "Value": "Fri, 28 Feb 2025 12:27:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2507,52 +2552,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UxI0jOFOoALQsbSoXKNZ5sDRkyhpurlz7iVN9mgJSHg="
-        }
-      ]
-    },
-    {
-      "Route": "js/Sucursal.pxn6n6662y.js",
-      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Sucursal.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2175"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UxI0jOFOoALQsbSoXKNZ5sDRkyhpurlz7iVN9mgJSHg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:22:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pxn6n6662y"
-        },
-        {
-          "Name": "label",
-          "Value": "js/Sucursal.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-UxI0jOFOoALQsbSoXKNZ5sDRkyhpurlz7iVN9mgJSHg="
+          "Value": "sha256-hK9G7KM8uxJNNrhpizfx+UgB3XM/N8vCTdhu3jGUMIY="
         }
       ]
     },
@@ -7499,7 +7499,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 02:56:35 GMT"
+          "Value": "Fri, 28 Feb 2025 12:52:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7536,7 +7536,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 02:56:35 GMT"
+          "Value": "Fri, 28 Feb 2025 12:52:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7581,7 +7581,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 02:56:35 GMT"
+          "Value": "Fri, 28 Feb 2025 12:52:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7626,7 +7626,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 02:56:35 GMT"
+          "Value": "Fri, 28 Feb 2025 12:52:30 GMT"
         },
         {
           "Name": "Cache-Control",

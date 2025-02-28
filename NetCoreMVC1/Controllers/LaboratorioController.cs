@@ -30,5 +30,18 @@ namespace NetCoreMVC1.Controllers
         //    return obj.GuardarLaboratorio(objLaboratorioCLS);
 
         //}
+
+        public LaboratorioCLS recuperarLaboratorio(int id)
+        {
+            LaboratorioBL obj = new LaboratorioBL();
+            return obj.recuperarLaboratorio(id);
+        }
+
+        public int Eliminar(int id)
+        {
+            LaboratorioBL obj = new LaboratorioBL();
+            return obj.Eliminar(id);
+        }
+
     }
 }

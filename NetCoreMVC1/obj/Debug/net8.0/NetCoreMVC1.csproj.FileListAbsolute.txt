@@ -267,6 +267,7 @@ C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.RazorAssemblyInfo.cache
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.RazorAssemblyInfo.cs
+C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.sourcelink.json
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\scopedcss\bundle\NetCoreMVC1.styles.css
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\scopedcss\projectbundle\NetCoreMVC1.bundle.scp.css
@@ -286,4 +287,3 @@ C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\refint\NetC
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.pdb
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.genruntimeconfig.cache
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\ref\NetCoreMVC1.dll
-C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.sourcelink.json

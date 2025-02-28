@@ -10,9 +10,9 @@ C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Negocio\obj\Debug\net8.0\Capa_Negoc
 C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Negocio\obj\Debug\net8.0\Capa_Negocio.AssemblyInfoInputs.cache
 C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Negocio\obj\Debug\net8.0\Capa_Negocio.AssemblyInfo.cs
 C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Negocio\obj\Debug\net8.0\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Negocio\obj\Debug\net8.0\Capa_Negocio.sourcelink.json
 C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Negocio\obj\Debug\net8.0\Capa_Neg.64FC8661.Up2Date
 C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Negocio\obj\Debug\net8.0\Capa_Negocio.dll
 C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Negocio\obj\Debug\net8.0\refint\Capa_Negocio.dll
 C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Negocio\obj\Debug\net8.0\Capa_Negocio.pdb
 C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Negocio\obj\Debug\net8.0\ref\Capa_Negocio.dll
-C:\Users\gamur\source\repos\NetCoreMVC1\Capa_Negocio\obj\Debug\net8.0\Capa_Negocio.sourcelink.json
