@@ -46,8 +46,11 @@ function guardarSucursal() {
 }
 function limpiarSucursal() {
     limpiarDatos("frmGuardarSucursal");
+    limpiarDatos("frmBusqueda");
     listarSucursal();    
 }
+
+
 async function Editar(id) {
     fetch_get('Sucursal/recuperarSucursal?id=' + id, 'json', res => {
         set('modal-id-input', res.id);
@@ -59,6 +62,7 @@ async function Editar(id) {
     document.getElementById('modal-id-group').style.display = 'block';
     $('#save-modal').modal('show');
 }
+
 
 function Eliminar(id) {
     fetch_get('Sucursal/recuperarSucursal?id=' + id, 'json', res => {
