@@ -77,7 +77,7 @@ function Eliminar(id) {
         confirmacion(undefined, "¿Desea eliminar: " + medNombre + "?", function () {
             fetch_get("TipoMedicamento/Eliminar/?id=" + id, "text", function (data) {
                 if (data == "1") {
-                    
+                    Exito();
                     listarTipoMedicamento();  
                 }
             });

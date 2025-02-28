@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1zbugqOBTmP8nQsOjDtlMZz2EcBfJhXYou58NXwVF2Q=",
+  "Hash": "phWRwZMcif0HtZaVkhNHqA6hQiegKcVvQsY+I9Tpkeo=",
   "Source": "NetCoreMVC1",
   "BasePath": "_content/NetCoreMVC1",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NetCoreMVC1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\css\\modal.css",
+      "SourceId": "NetCoreMVC1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\",
+      "BasePath": "_content/NetCoreMVC1",
+      "RelativePath": "css/modal#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wny7za5ly1",
+      "Integrity": "PKY9uwlaBStQl1+zAuXbsSNlf5TqbRBD7+gt3d5nW40=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\modal.css"
     },
     {
       "Identity": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\css\\sidebar.css",
@@ -157,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vipxcwax6y",
-      "Integrity": "iRRVmcRG4ObriVC6LnwGnC4vTYa0V1L8gc0ouqhnNtM=",
+      "Fingerprint": "c9ljepb33r",
+      "Integrity": "oMvRsK5OWBunE1JlbzUxWbRxZmMTeZeXAL4foWBsDE8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Generic.js"
@@ -304,8 +325,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rpdmgnvllz",
-      "Integrity": "7+p90nylB/9CZnCCm1yLP7skJpYiAext8617IBUgyPU=",
+      "Fingerprint": "brbaumpo3r",
+      "Integrity": "B+A/Dn6F12ZFG4S1jfszUWQFRfHFzFBp9RuwsR27aBs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\TipoMedicamento.js"
@@ -1552,6 +1573,88 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/modal.css",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\css\\modal.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PKY9uwlaBStQl1+zAuXbsSNlf5TqbRBD7+gt3d5nW40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 00:12:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PKY9uwlaBStQl1+zAuXbsSNlf5TqbRBD7+gt3d5nW40="
+        }
+      ]
+    },
+    {
+      "Route": "css/modal.wny7za5ly1.css",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\css\\modal.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PKY9uwlaBStQl1+zAuXbsSNlf5TqbRBD7+gt3d5nW40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 00:12:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wny7za5ly1"
+        },
+        {
+          "Name": "label",
+          "Value": "css/modal.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PKY9uwlaBStQl1+zAuXbsSNlf5TqbRBD7+gt3d5nW40="
+        }
+      ]
+    },
+    {
       "Route": "css/sidebar.css",
       "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\css\\sidebar.css",
       "Selectors": [],
@@ -1880,6 +1983,51 @@
       ]
     },
     {
+      "Route": "js/Generic.c9ljepb33r.js",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Generic.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8899"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oMvRsK5OWBunE1JlbzUxWbRxZmMTeZeXAL4foWBsDE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 00:19:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c9ljepb33r"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Generic.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oMvRsK5OWBunE1JlbzUxWbRxZmMTeZeXAL4foWBsDE8="
+        }
+      ]
+    },
+    {
       "Route": "js/Generic.js",
       "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Generic.js",
       "Selectors": [],
@@ -1890,7 +2038,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8924"
+          "Value": "8899"
         },
         {
           "Name": "Content-Type",
@@ -1898,11 +2046,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iRRVmcRG4ObriVC6LnwGnC4vTYa0V1L8gc0ouqhnNtM=\""
+          "Value": "\"oMvRsK5OWBunE1JlbzUxWbRxZmMTeZeXAL4foWBsDE8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:06 GMT"
+          "Value": "Fri, 28 Feb 2025 00:19:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1912,52 +2060,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-iRRVmcRG4ObriVC6LnwGnC4vTYa0V1L8gc0ouqhnNtM="
-        }
-      ]
-    },
-    {
-      "Route": "js/Generic.vipxcwax6y.js",
-      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\Generic.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8924"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iRRVmcRG4ObriVC6LnwGnC4vTYa0V1L8gc0ouqhnNtM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:16:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vipxcwax6y"
-        },
-        {
-          "Name": "label",
-          "Value": "js/Generic.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iRRVmcRG4ObriVC6LnwGnC4vTYa0V1L8gc0ouqhnNtM="
+          "Value": "sha256-oMvRsK5OWBunE1JlbzUxWbRxZmMTeZeXAL4foWBsDE8="
         }
       ]
     },
@@ -2454,6 +2557,51 @@
       ]
     },
     {
+      "Route": "js/TipoMedicamento.brbaumpo3r.js",
+      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\TipoMedicamento.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2694"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B+A/Dn6F12ZFG4S1jfszUWQFRfHFzFBp9RuwsR27aBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 00:13:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "brbaumpo3r"
+        },
+        {
+          "Name": "label",
+          "Value": "js/TipoMedicamento.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B+A/Dn6F12ZFG4S1jfszUWQFRfHFzFBp9RuwsR27aBs="
+        }
+      ]
+    },
+    {
       "Route": "js/TipoMedicamento.js",
       "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\TipoMedicamento.js",
       "Selectors": [],
@@ -2464,7 +2612,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2686"
+          "Value": "2694"
         },
         {
           "Name": "Content-Type",
@@ -2472,11 +2620,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7+p90nylB/9CZnCCm1yLP7skJpYiAext8617IBUgyPU=\""
+          "Value": "\"B+A/Dn6F12ZFG4S1jfszUWQFRfHFzFBp9RuwsR27aBs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:29:44 GMT"
+          "Value": "Fri, 28 Feb 2025 00:13:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2486,52 +2634,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7+p90nylB/9CZnCCm1yLP7skJpYiAext8617IBUgyPU="
-        }
-      ]
-    },
-    {
-      "Route": "js/TipoMedicamento.rpdmgnvllz.js",
-      "AssetFile": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\js\\TipoMedicamento.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2686"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7+p90nylB/9CZnCCm1yLP7skJpYiAext8617IBUgyPU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Feb 2025 23:29:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "rpdmgnvllz"
-        },
-        {
-          "Name": "label",
-          "Value": "js/TipoMedicamento.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-7+p90nylB/9CZnCCm1yLP7skJpYiAext8617IBUgyPU="
+          "Value": "sha256-B+A/Dn6F12ZFG4S1jfszUWQFRfHFzFBp9RuwsR27aBs="
         }
       ]
     },

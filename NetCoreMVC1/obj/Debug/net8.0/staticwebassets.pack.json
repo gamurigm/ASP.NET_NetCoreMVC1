@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\NetCoreMVC1.lp21rdsyhy.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\css\\modal.css",
+      "PackagePath": "staticwebassets\\css\\modal.css"
+    },
+    {
       "Id": "C:\\Users\\gamur\\source\\repos\\NetCoreMVC1\\NetCoreMVC1\\wwwroot\\css\\sidebar.css",
       "PackagePath": "staticwebassets\\css\\sidebar.css"
     },
