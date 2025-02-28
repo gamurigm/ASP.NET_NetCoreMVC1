@@ -29,7 +29,7 @@ namespace Capa_Datos
                             {
                                 lista.Add(new LaboratorioCLS
                                 {
-                                    IIDLABORATORIO = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
+                                    id = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
                                     NOMBRE = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
                                     DIRECCION = drd.IsDBNull(2) ? string.Empty : drd.GetString(2),
                                  
@@ -77,7 +77,7 @@ namespace Capa_Datos
                             {
                                 lista.Add(new LaboratorioCLS
                                 {
-                                    IIDLABORATORIO = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
+                                    id = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
                                     NOMBRE = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
                                     DIRECCION = drd.IsDBNull(2) ? string.Empty : drd.GetString(2),
                               
@@ -103,7 +103,86 @@ namespace Capa_Datos
             return lista;
         }
 
-        //public int GuardarLaboratorio(LaboratorioCLS oLaboratorioCLS)
+        public LaboratorioCLS recuperarLaboratorio(int id)
+        {
+            LaboratorioCLS oLaboratorioCLS = null;
+
+            try
+            {
+                using (SqlConnection cn = ObtenerConexion())
+                {
+                    cn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand("SELECT iidlaboratorio, nombre, descripcion, personacontacto FROM Laboratorio WHERE BHABILITADO = 1 AND IIDLABORATORIO = @id", cn))
+                    {
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Parameters.AddWithValue("@id", id);
+
+                        using (SqlDataReader drd = cmd.ExecuteReader())
+                        {
+                            if (drd.Read())
+                            {
+                                oLaboratorioCLS = new LaboratorioCLS
+                                {
+                                    id = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
+                                    NOMBRE = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
+                                    DIRECCION  = drd.IsDBNull(2) ? string.Empty : drd.GetString(2),
+                                    PERSONACONTACTO = drd.IsDBNull(2) ? string.Empty : drd.GetString(3)
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine($"Error SQL: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error inesperado: {ex.Message}");
+            }
+
+            return oLaboratorioCLS;
+        }
+
+        public int Eliminar(int id)
+        {
+            int rpta = 0;
+
+            using (SqlConnection cn = ObtenerConexion())
+            {
+                try
+                {
+                    cn.Open();
+
+                    string sqlCommand = "DELETE FROM Laboratorio WHERE IIDLABORATORIO = @id";
+
+                    using (SqlCommand cmd = new SqlCommand(sqlCommand, cn))
+                    {
+                        cmd.CommandType = CommandType.Text;
+
+                        if (id != 0)
+                        {
+                            cmd.Parameters.AddWithValue("@id", id);
+                        }
+
+                        rpta = cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error SQL: {ex.Message}");
+                }
+                finally
+                {
+                    cn.Close();
+                }
+            }
+            return rpta;
+        }
+
+        //public int GuardarTipoMedicamento(TipoMedicamentoCLS oTipoMedicamentoCLS)
         //{
         //    int rpta = 0;
 
@@ -112,12 +191,29 @@ namespace Capa_Datos
         //        try
         //        {
         //            cn.Open();
+        //            string sqlCommand;
 
-        //            using (SqlCommand cmd = new SqlCommand("INSERT INTO Laboratorio", cn))
+        //            if (oTipoMedicamentoCLS.id == 0)
+        //            {
+        //                // Inserción
+        //                sqlCommand = "INSERT INTO TipoMedicamento(NOMBRE, DESCRIPCION, BHABILITADO) VALUES(@nombre, @descripcion, 1)";
+        //            }
+        //            else
+        //            {
+        //                // Actualización
+        //                sqlCommand = "UPDATE TipoMedicamento SET NOMBRE = @nombre, DESCRIPCION = @descripcion WHERE IIDTIPOMEDICAMENTO = @id";
+        //            }
+
+        //            using (SqlCommand cmd = new SqlCommand(sqlCommand, cn))
         //            {
         //                cmd.CommandType = CommandType.Text;
-        //                cmd.Parameters.AddWithValue("@nombre", oLaboratorioCLS.NOMBRE);
-        //                cmd.Parameters.AddWithValue("@direccion", oLaboratorioCLS.DIRECCION);
+        //                cmd.Parameters.AddWithValue("@nombre", oTipoMedicamentoCLS.nombre);
+        //                cmd.Parameters.AddWithValue("@descripcion", oTipoMedicamentoCLS.descripcion);
+
+        //                if (oTipoMedicamentoCLS.id != 0)
+        //                {
+        //                    cmd.Parameters.AddWithValue("@id", oTipoMedicamentoCLS.id);
+        //                }
 
         //                rpta = cmd.ExecuteNonQuery();
         //            }
@@ -125,10 +221,15 @@ namespace Capa_Datos
         //        catch (Exception ex)
         //        {
         //            Console.WriteLine($"Error SQL: {ex.Message}");
+        //        }
+        //        finally
+        //        {
         //            cn.Close();
         //        }
         //    }
         //    return rpta;
         //}
+
+
     }
 }
