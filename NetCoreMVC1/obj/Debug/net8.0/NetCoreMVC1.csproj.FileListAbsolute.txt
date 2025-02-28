@@ -286,3 +286,4 @@ C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\refint\NetC
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.pdb
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.genruntimeconfig.cache
 C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\ref\NetCoreMVC1.dll
+C:\Users\gamur\source\repos\NetCoreMVC1\NetCoreMVC1\obj\Debug\net8.0\NetCoreMVC1.sourcelink.json

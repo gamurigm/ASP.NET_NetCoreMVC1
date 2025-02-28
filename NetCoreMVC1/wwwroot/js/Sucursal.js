@@ -46,12 +46,11 @@ function limpiarSucursal() {
     limpiarDatos("frmGuardarSucursal");
     listarSucursal();    
 }
-
 async function Editar(id) {
     fetch_get('Sucursal/recuperarSucursal?id=' + id, 'json', res => {
         set('modal-id-input', res.id);
         set('modal-nombre-input', res.nombre);
-        set('modal-direccion-input', res.descripcion);
+        set('modal-direccion-input', res.direccion);
 
     });
     document.getElementById('modal-label').textContent = 'Editar Sucursal';
@@ -67,9 +66,10 @@ function Eliminar(id) {
             fetch_get("Sucursal/Eliminar/?id=" + id, "text", function (data) {
                 if (data == "1") {
                     Exito();
-                    listarTipoMedicamento();
+                    listarSucursal();
                 }
             });
         });
     });
 }
+

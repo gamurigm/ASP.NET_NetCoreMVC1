@@ -133,7 +133,7 @@ namespace Capa_Datos
                 {
                     cn.Open();
 
-                    using (SqlCommand cmd = new SqlCommand("SELECT iidsucursal, nombre, direccion FROM Sucursal WHERE BHABILITADO = 1 AND IIDSUCURSAL = @id", cn))
+                    using (SqlCommand cmd = new SqlCommand("SELECT iidsucursal as id, nombre, direccion FROM Sucursal WHERE BHABILITADO = 1 AND IIDSUCURSAL = @id", cn))
                     {
                         cmd.CommandType = CommandType.Text;
                         cmd.Parameters.AddWithValue("@id", id);
@@ -200,6 +200,11 @@ namespace Capa_Datos
             }
             return rpta;
         }
+
+
+
+
+
     }
 
 }

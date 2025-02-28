@@ -30,7 +30,7 @@ namespace NetCoreMVC1.Controllers
 
         }
 
-        public SucursalCLS recuperarTipoMedicamento(int id)
+        public SucursalCLS recuperarSucursal(int id)
         {
             SucursalBL obj = new SucursalBL();
             return obj.recuperarSucursal(id);
