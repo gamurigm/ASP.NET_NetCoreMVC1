@@ -23,5 +23,32 @@ namespace Capa_Negocio
             return obj.filtrarLaboratorio(objLab);
 
         }
+
+        //public int GuardarTipoMedicamento(TipoMedicamentoCLS oTipoMedicamentoCLS)
+        //{
+
+        //    if (string.IsNullOrEmpty(oTipoMedicamentoCLS.nombre))
+        //    {
+
+        //        return 0; // indicar error
+        //    }
+        //    TipoMedicamentoDAL obj = new TipoMedicamentoDAL();
+        //    return obj.GuardarTipoMedicamento(oTipoMedicamentoCLS);
+
+        //}
+
+        public LaboratorioCLS recuperarLaboratorio(int id)
+        {
+            LaboratorioDAL obj = new LaboratorioDAL();
+            return obj.recuperarLaboratorio(id);
+        }
+
+        public int Eliminar(int id)
+        {
+            LaboratorioDAL obj = new LaboratorioDAL();
+            return obj.Eliminar(id);
+        }
+
+
     }
 }
