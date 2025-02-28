@@ -6,13 +6,13 @@
 <h1>IndexSucursal</h1>
 
 
-<div class="input-group">
-    <input id="txtNombreBusqueda" type="text" class="form-control" placeholder="Sucursal" onkeyup="filtrarSucursal()" aria-label="...">
+@* <div class="input-group">
+    <input id="txtNombreBusqueda" type="text" class="form-control" placeholder="Sucursal" onkeyup="buscarSucursal()" aria-label="...">
     <button class="btn btn-outline-secondary" type="button" onclick="buscarSucursal()">Button</button>
     <button id="limpiar" class="btn btn-outline-info" type="button" onclick="limpiarSucursal()">Limpiar</button>
-</div>
+</div> *@
 
-@* <fieldset class="mb-4 mt-4">
+<fieldset class="mb-4 mt-4">
     <legend>Busqueda Sucursal</legend>
     <form class="row g-3" id="frmBusqueda" method="post">
         <div class="col-md-6">
@@ -23,9 +23,11 @@
             <label for="inputPassword4" class="form-label">Dirección</label>
             <input type="text" class="form-control" name="direccion" id="direccion">
         </div>
-      
+        <button class="btn btn-outline-secondary" type="button" onclick="buscarSucursal()">Buscar</button>
+        <button id="limpiar" class="btn btn-outline-info" type="button" onclick="limpiarSucursal()">Limpiar</button>
     </form> 
-</fieldset>*@
+</fieldset>
+
     <br />
 
     <fieldset class="mb-4 mt-4">
