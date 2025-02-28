@@ -210,8 +210,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8sn2p4olj6</Fingerprint>
-      <Integrity>GBIDL2DGCt3GLt97Dodnzq89zxiQdAipSUOxstCiwq0=</Integrity>
+      <Fingerprint>v8x0wtir9t</Fingerprint>
+      <Integrity>scM5bvsgKvPwAOamFd9Z8cw2R08SXmL51ny3FNEnG7g=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Sucursal.js'))</OriginalItemSpec>

@@ -31,5 +31,18 @@ namespace Capa_Negocio
             return obj.GuardarSucursal(oSucursalCLS);
 
         }
+
+        public SucursalCLS recuperarSucursal(int id)
+        {
+            SucursalDAL obj = new SucursalDAL();
+            return obj.recuperarSucursal(id);
+        }
+
+        public int Eliminar(int id)
+        {
+            SucursalDAL obj = new SucursalDAL();
+            return obj.Eliminar(id);
+        }
+
     }
 }

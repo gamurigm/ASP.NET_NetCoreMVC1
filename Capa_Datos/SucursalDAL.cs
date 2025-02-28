@@ -122,6 +122,84 @@ namespace Capa_Datos
 
             return lista;
         }
+
+        public SucursalCLS recuperarSucursal(int id)
+        {
+            SucursalCLS oSucursalCLS = null;
+
+            try
+            {
+                using (SqlConnection cn = ObtenerConexion())
+                {
+                    cn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand("SELECT iidsucursal, nombre, direccion FROM Sucursal WHERE BHABILITADO = 1 AND IIDSUCURSAL = @id", cn))
+                    {
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Parameters.AddWithValue("@id", id);
+
+                        using (SqlDataReader drd = cmd.ExecuteReader())
+                        {
+                            if (drd.Read())
+                            {
+                                oSucursalCLS = new SucursalCLS
+                                {
+                                    IIDSUCURSAL = drd.IsDBNull(0) ? 0 : drd.GetInt32(0),
+                                    NOMBRE = drd.IsDBNull(1) ? string.Empty : drd.GetString(1),
+                                    DIRECCION = drd.IsDBNull(2) ? string.Empty : drd.GetString(2)
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine($"Error SQL: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error inesperado: {ex.Message}");
+            }
+
+            return oSucursalCLS;
+        }
+
+        public int Eliminar(int id)
+        {
+            int rpta = 0;
+
+            using (SqlConnection cn = ObtenerConexion())
+            {
+                try
+                {
+                    cn.Open();
+
+                    string sqlCommand = "DELETE FROM Sucursal WHERE IIDSUCURSAL = @id";
+
+                    using (SqlCommand cmd = new SqlCommand(sqlCommand, cn))
+                    {
+                        cmd.CommandType = CommandType.Text;
+
+                        if (id != 0)
+                        {
+                            cmd.Parameters.AddWithValue("@id", id);
+                        }
+
+                        rpta = cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error SQL: {ex.Message}");
+                }
+                finally
+                {
+                    cn.Close();
+                }
+            }
+            return rpta;
+        }
     }
 
 }

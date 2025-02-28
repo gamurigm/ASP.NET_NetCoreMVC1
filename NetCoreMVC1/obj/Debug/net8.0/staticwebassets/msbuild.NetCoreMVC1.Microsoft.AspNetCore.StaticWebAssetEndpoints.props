@@ -132,17 +132,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xtxxf3hu2r"},{"Name":"integrity","Value":"sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="},{"Name":"label","Value":"_content/NetCoreMVC1/js/site.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"231"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 31 Jan 2025 14:33:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/NetCoreMVC1/js/Sucursal.8sn2p4olj6.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Sucursal.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8sn2p4olj6"},{"Name":"integrity","Value":"sha256-GBIDL2DGCt3GLt97Dodnzq89zxiQdAipSUOxstCiwq0="},{"Name":"label","Value":"_content/NetCoreMVC1/js/Sucursal.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1633"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022GBIDL2DGCt3GLt97Dodnzq89zxiQdAipSUOxstCiwq0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 00:35:10 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/NetCoreMVC1/js/Sucursal.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Sucursal.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-GBIDL2DGCt3GLt97Dodnzq89zxiQdAipSUOxstCiwq0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1633"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022GBIDL2DGCt3GLt97Dodnzq89zxiQdAipSUOxstCiwq0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 00:35:10 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-scM5bvsgKvPwAOamFd9Z8cw2R08SXmL51ny3FNEnG7g="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2143"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022scM5bvsgKvPwAOamFd9Z8cw2R08SXmL51ny3FNEnG7g=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 02:45:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/NetCoreMVC1/js/Sucursal.v8x0wtir9t.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Sucursal.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v8x0wtir9t"},{"Name":"integrity","Value":"sha256-scM5bvsgKvPwAOamFd9Z8cw2R08SXmL51ny3FNEnG7g="},{"Name":"label","Value":"_content/NetCoreMVC1/js/Sucursal.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2143"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022scM5bvsgKvPwAOamFd9Z8cw2R08SXmL51ny3FNEnG7g=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 02:45:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/NetCoreMVC1/js/TipoMedicamento.brbaumpo3r.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\TipoMedicamento.js'))</AssetFile>

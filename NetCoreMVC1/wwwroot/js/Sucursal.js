@@ -8,28 +8,15 @@ let objSucursal = {
     cabeceras: ["ID Sucursal", "Nombre", "Dirección"],
     propiedades: ["iidsucursal", "nombre", "direccion"],
     //contenedorTabla: "contenedorTabla"
+    editar: true,
+    eliminar: true,
+    propiedadId: "iidsucursal"
 };
 
 async function listarSucursal() {
     pintar(objSucursal);
 }
 
-//async function filtrarSucursal() {
-//    let nombre = get("txtNombreBusqueda")
-//    if (nombre == "")
-//        listarSucursal();
-//    else {
-
-//        objSucursal.url = "Sucursal/filtrarSucursal/?nombre=" + nombre;
-//        pintar(objSucursal);
-//    }
-//}
-
-//async function buscarSucursal() {
-//    let nombreSucursal = get("txtNombreBusqueda");
-//    objSucursal.url = "Sucursal/filtrarSucursal/?nombre=" + nombreSucursal;
-//    await pintar(objSucursal);
-//}
 
 async function buscarSucursal() {
     let forma = document.getElementById("frmBusqueda");
@@ -60,3 +47,29 @@ function limpiarSucursal() {
     listarSucursal();    
 }
 
+async function Editar(id) {
+    fetch_get('Sucursal/recuperarSucursal?id=' + id, 'json', res => {
+        set('modal-id-input', res.id);
+        set('modal-nombre-input', res.nombre);
+        set('modal-direccion-input', res.descripcion);
+
+    });
+    document.getElementById('modal-label').textContent = 'Editar Sucursal';
+    document.getElementById('modal-id-group').style.display = 'block';
+    $('#save-modal').modal('show');
+}
+
+function Eliminar(id) {
+    fetch_get('Sucursal/recuperarSucursal?id=' + id, 'json', res => {
+        let Nombre = res.nombre;
+
+        confirmacion(undefined, "¿Desea eliminar: " + Nombre + "?", function () {
+            fetch_get("Sucursal/Eliminar/?id=" + id, "text", function (data) {
+                if (data == "1") {
+                    Exito();
+                    listarTipoMedicamento();
+                }
+            });
+        });
+    });
+}

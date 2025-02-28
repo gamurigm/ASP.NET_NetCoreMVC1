@@ -54,7 +54,42 @@
 
    </fieldset>
 
-    <div id="div-table">
+@* formulario *@
+
+<div id="save-modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="modal-label" class="modal-title">Editar Sucursal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <form id="modal-form" method="post" class="row">
+                    <div id="modal-id-group" class="col-2 mb-2">
+                        <label class="col-form-label mb-0">Id:</label>
+                        <input id="modal-id-input" class="form-control" name="Id" type="text" placeholder="?" contenteditable="false" required readonly>
+                    </div>
+                    <div class="col-10 mb-2">
+                        <label class="col-form-label mb-0">Nombre:</label>
+                        <input id="modal-nombre-input" class="form-control" name="nombre" type="text" required>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <label class="col-form-label mb-0">Dirección:</label>
+                        <input id="modal-direccion-input" class="form-control" name="direccion" type="text" required>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary w-100" onclick="guardarSucursal()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="div-table">
 
 </div>
 
